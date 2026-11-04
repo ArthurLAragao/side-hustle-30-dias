@@ -8,8 +8,8 @@ https://arthurlaragao.github.io/side-hustle-30-dias/
 
 ## Funcionalidades
 
-- Visão Geral, Cronograma, Checklists, Métricas, Decisões e Regras.
-- 30 tarefas e oito marcos, com progresso e métricas no localStorage.
+- Visão Geral, Cronograma, Checklists, Métricas, Decisões.
+- Tarefas semanais, 30 guias diários e oito marcos, com progresso e métricas no localStorage.
 - Dia automático ou manual e exportação/importação de backup JSON.
 - Layout responsivo, suporte a movimento reduzido e funcionamento offline.
 
@@ -24,3 +24,9 @@ Os dados ficam apenas no navegador e não são enviados ao GitHub. Não há sinc
 ## Publicação
 
 GitHub Pages configurado para publicar a branch `main`, pasta raiz. Atualize `index.html` para publicar uma nova versão.
+
+## Prioridades e finanças
+
+Digital Products: 50%; AI Automation + Landing Pages: 40%; AI Ads / UGC Ads: 10%. Semana 1 prioriza o produto digital e a definição das duas ofertas. A execução de automação começa na Semana 2.
+
+Métricas e Decisões compartilham registros semanais por setor. Custos, taxas, reembolsos e aquisição alimentam o saldo operacional. Dados anteriores ficam preservados como histórico sem setor. O saldo exclui impostos, câmbio e remuneração própria; campos vazios mantêm indicadores incompletos. Backups da versão anterior são migrados por identidade da tarefa.
