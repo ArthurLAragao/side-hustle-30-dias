@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#000000">
-<title>Side Hustle Internacional — Plano de 30 Dias</title>
+<title>Side Hustles — Business Operating System</title>
 <style>
 
 :root{color-scheme:dark;--bg:#000;--card:#080808;--raised:#0d0d0d;--line:rgba(255,255,255,.07);--text:#fff;--muted:#b8b8b8;--green:#00ff88;--radius:26px;--ease:cubic-bezier(.22,1,.36,1);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -29,6 +29,36 @@ nav .icon,.empty-state>.icon{display:none}
 
 .schedule-workspace{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:start}.schedule-workspace .calendar{grid-template-columns:repeat(7,minmax(0,1fr))}.daily-guide{position:sticky;top:160px}.daily-guide h3{font-size:25px;margin-top:20px}.daily-guide li,#decision-detail li{margin:14px 0;color:#c9c9c9}.daily-guide .note p{margin:8px 0 0}.daily-guide>p{margin-top:22px}.sector-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.sector-picker button{text-align:left}.sector-picker span{display:block;font-size:12px;margin-bottom:12px}.sector-picker strong{display:block;font-size:17px}.sector-picker button.active{background:#0b1710;color:#fff;border-color:rgba(0,255,136,.4)}.finance-number{display:block;font-size:clamp(20px,2.6vw,32px);letter-spacing:-.04em;margin-top:18px;overflow-wrap:anywhere}.metric-group{grid-column:1/-1;margin:28px 0 0}.evaluation{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:18px 0}.evaluation select{min-width:120px}#decision-detail details{margin-top:26px}.schedule-workspace>*{min-width:0}#finance-summary{margin:32px 0}.daily-guide ol{padding-left:22px}@media(max-width:900px){.schedule-workspace{grid-template-columns:1fr}.daily-guide{position:static}.sector-picker{grid-template-columns:1fr}.sector-picker button{padding:22px}.sector-picker span{margin-bottom:6px}.evaluation{flex-wrap:wrap}}@media(max-width:480px){.schedule-workspace .calendar{grid-template-columns:repeat(5,minmax(0,1fr))}.daily-guide h3{font-size:22px}.finance-number{font-size:23px}}
 </style>
+
+<style id="bos-styles">/* Business OS shell extends the original Side Hustles black/green identity. */
+.bos-main{max-width:1280px;padding-top:42px!important;padding-bottom:90px!important;min-height:60vh}
+.bos-hero{padding-top:44px;padding-bottom:32px}.bos-hero h1{font-size:clamp(30px,4vw,48px);max-width:900px;margin:22px 0}.bos-hero .intro{max-width:850px}
+.bos-sticky{position:sticky;top:0;z-index:6;background:rgba(0,0,0,.97);backdrop-filter:blur(16px);border-block:1px solid var(--line)}
+.bos-top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:16px;padding-bottom:8px;font-size:12px}.bos-top>div{display:flex;align-items:center;gap:18px;min-width:0}.bos-top .bar{width:200px;margin:0}.bos-top strong{color:var(--green);font-size:12px;font-weight:500}.bos-top>span{color:var(--muted)}
+#bos-nav,#bos-subnav{display:flex;overflow:auto;gap:6px;scrollbar-width:thin;padding-block:12px!important}#bos-nav button,#bos-subnav button{white-space:nowrap;min-height:44px;border-radius:100px;font-size:13px;padding:10px 16px}
+#bos-subnav{position:relative;margin-bottom:32px;padding-left:0;padding-right:0;border-bottom:1px solid var(--line)}#bos-subnav button{background:#080808;border:1px solid var(--line)}#bos-subnav button.active{background:#102018;color:var(--green);border-color:#234331}
+#bos-content{animation:appear .35s var(--ease)}#bos-content>h2{margin-bottom:16px}#bos-content .grid{margin-top:24px}#bos-content .bos-stats{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin:30px 0}
+.bos-number{display:block;font-size:clamp(22px,2.5vw,34px);font-weight:500;line-height:1.25;letter-spacing:-.04em;margin-top:18px;overflow-wrap:anywhere}.bos-stats .card{padding:27px}.bos-stats .small{margin:14px 0 0;font-size:11px}
+.bos-target>strong{display:block;font-size:clamp(34px,4.5vw,58px);font-weight:500;letter-spacing:-.05em;margin:20px 0;color:var(--green)}.bos-target>strong span{font-size:.45em;color:var(--muted)}.bos-target .small{margin:18px 0 0}
+.bos-section-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:28px 0 22px}.bos-section-heading h3,.bos-section-heading p{margin:0}.bos-section-heading>div{min-width:0}.bos-section-heading button{flex-shrink:0}
+.bos-records{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.bos-records .card>h3{font-size:18px;margin:12px 0 18px}.bos-records .card>small{overflow-wrap:anywhere}.bos-records dl{margin:0 0 22px;display:grid;gap:12px}.bos-records dl>div{display:grid;grid-template-columns:140px minmax(0,1fr);gap:14px}.bos-records dt{font-size:11px;color:var(--muted)}.bos-records dd{margin:0;font-size:12px;overflow-wrap:anywhere;white-space:pre-wrap}.bos-records .card>.small{font-size:9px;overflow-wrap:anywhere}
+.bos-task-list{margin-top:20px}.bos-task{border-bottom:1px solid var(--line);padding:20px 0}.bos-task>label{display:flex;align-items:flex-start;gap:14px;font-size:14px;cursor:pointer;line-height:1.6}.bos-task input{flex-shrink:0;margin-top:2px}.bos-task.done>label>span{text-decoration:line-through;color:#a0aaa4}.bos-task-meta{display:flex;gap:8px 16px;align-items:center;flex-wrap:wrap;margin:12px 0 0 36px;font-size:10px;color:var(--muted)}.bos-task-meta button{margin-left:auto;padding:6px 12px;font-size:11px;min-height:34px}
+.bos-filterbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:28px 0}.bos-filterbar label{display:flex;flex-direction:column;gap:8px;font-size:11px;color:var(--muted)}.bos-filterbar select,.bos-filterbar input{width:100%;font-size:13px;min-height:44px}
+.bos-week-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:32px 0}.bos-week-grid button{text-align:left;font-size:13px;padding:20px}.bos-week-grid small{display:block;font-size:11px;margin-top:8px;opacity:.8}.schedule-workspace{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}.daily-guide{max-height:75vh;overflow:auto;top:155px}.daily-guide .bos-task-meta{margin-left:0}.daily-guide .bos-section-heading{flex-wrap:wrap}.daily-guide .bos-task-list{margin-top:12px}
+.bos-footer{border-top:1px solid var(--line);background:#050505;padding:25px 0 32px}.bos-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:22px}.bos-footer .toolbar{margin:0}.bos-footer button{font-size:12px}.bos-footer p{font-size:11px;color:var(--muted);margin:0;max-width:680px}#bos-notice{position:sticky;bottom:0;z-index:9;padding:10px 24px;text-align:center;background:#090909;border-top:1px solid var(--line);color:#c9d4cd;font-size:11px;min-height:38px}#bos-notice.error{color:#fff;border-color:#65766b}
+.bos-dialog{width:min(880px,calc(100vw - 32px));max-height:90dvh;background:#0a0a0a;border:1px solid #303030;border-radius:24px;color:#fff;padding:32px}.bos-dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}.bos-dialog .bos-section-heading{margin-top:0}.bos-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0}.bos-field{display:flex;flex-direction:column;gap:9px;font-size:12px;color:var(--muted);min-width:0}.bos-field input,.bos-field select,.bos-field textarea{width:100%;min-height:44px;font-size:14px;color:#fff;background:#060606;border:1px solid #303030;border-radius:12px;padding:12px;font-family:inherit}.bos-field:has(textarea){grid-column:1/-1}.bos-field input[type=checkbox]{width:22px;min-height:22px;padding:0}.bos-error{font-size:13px;color:#fff}.bos-dialog form>button{min-height:44px}.bos-dialog select option{background:#111}
+#bos-content pre{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;max-height:500px;overflow:auto;background:#050505;border-radius:12px;padding:18px;font-size:11px;line-height:1.7;color:#c9c9c9}#bos-content details{margin-top:22px}#bos-content summary{min-height:40px;padding:8px 0}#bos-content details.card{padding:24px}.empty-tip{padding:22px;color:var(--muted);font-size:13px}.bos-note{margin:22px 0}.bos-main .note{margin-block:24px}
+@media(max-width:1000px){#bos-content .bos-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.bos-filterbar{grid-template-columns:repeat(3,minmax(0,1fr))}.bos-top .bar{width:120px}.bos-records{grid-template-columns:1fr}.schedule-workspace{grid-template-columns:1fr}.daily-guide{position:static;max-height:none;overflow:visible}.bos-week-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.bos-main{padding-top:24px!important;padding-bottom:50px!important}.bos-hero{padding-top:30px;padding-bottom:24px}.bos-hero h1{font-size:32px}.bos-hero .intro{font-size:13px}.bos-top{padding-top:12px;gap:8px;align-items:flex-start;flex-direction:column}.bos-top>div{width:100%;justify-content:space-between;gap:12px}.bos-top .bar{flex:1;width:auto}.bos-top>span{font-size:10px}#bos-nav button,#bos-subnav button{font-size:12px;padding:10px 14px}#bos-subnav{margin-bottom:24px}.bos-section-heading{align-items:flex-start;flex-wrap:wrap;gap:14px}.bos-stats .card{padding:22px}#bos-content .bos-stats{gap:14px;margin:24px 0}.bos-number{font-size:25px}.bos-records dl>div{grid-template-columns:105px minmax(0,1fr)}.bos-filterbar{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.bos-task>label{font-size:13px}.bos-task-meta{margin-left:0;gap:8px 12px}.bos-task-meta button{min-height:44px}.bos-form-grid{grid-template-columns:1fr}.bos-field:has(textarea){grid-column:auto}.bos-field input,.bos-field select,.bos-field textarea{font-size:16px}.bos-dialog{padding:22px;max-height:92dvh}.bos-footer .wrap{flex-direction:column;align-items:flex-start}.bos-footer .toolbar{width:100%;gap:10px}.bos-footer button{flex:1;min-height:44px}#bos-notice{font-size:10px;text-align:left;padding:11px 18px}.bos-target>strong{font-size:38px}.bos-week-grid{gap:10px}.bos-week-grid button{padding:16px;font-size:12px}.daily-guide .card{padding:20px}.bos-hero .topline{flex-wrap:wrap}}
+@media(max-width:360px){#bos-content .bos-stats{grid-template-columns:1fr}.bos-filterbar{grid-template-columns:1fr}.bos-number{font-size:26px}.bos-records dl>div{grid-template-columns:1fr;gap:3px}}
+@media(prefers-reduced-motion:reduce){#bos-content{animation:none}}
+
+.bos-number.bos-long-value{font-size:16px;line-height:1.6;letter-spacing:0}.bos-main{scroll-margin-top:125px}
+
+.product-context{display:flex;gap:20px;justify-content:space-between;align-items:center;margin:24px 0 30px;flex-wrap:wrap}.product-context label{display:grid;gap:8px;min-width:240px;max-width:100%;font-size:12px;color:var(--muted)}.product-context select{max-width:100%}.lifecycle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}.lifecycle-grid button{text-align:left;padding:22px}.lifecycle-grid span,.lifecycle-grid small,.lifecycle-grid strong{display:block}.lifecycle-grid strong{font-size:25px;margin:8px 0}.lifecycle-grid small{color:var(--muted)}.scenario-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0}.scenario-fields label{display:grid;gap:8px;font-size:12px;color:var(--muted)}@media(max-width:700px){.lifecycle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.scenario-fields{grid-template-columns:1fr}.product-context label{min-width:0;width:100%}}@media(max-width:360px){.lifecycle-grid{grid-template-columns:1fr}}
+
+.business-stage-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.business-stage-grid>div{min-width:0;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px}.business-stage-grid span{display:block;color:#b8b8b8;font-size:11px}.business-stage-grid strong{display:block;font-size:25px;margin-top:8px;font-weight:500}.business-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.business-split{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px}.business-split small{grid-column:1/-1;color:#b8b8b8}.business-split strong{overflow-wrap:anywhere}.business-filters{margin-bottom:24px}.business-filters label{display:flex;flex-direction:column;gap:8px;min-width:0}.business-filters input,.business-filters select{width:100%;min-width:0}@media(max-width:800px){.business-stage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.business-two{grid-template-columns:1fr}}@media(max-width:420px){.business-split{grid-template-columns:1fr}.business-stage-grid>div{padding:14px}}
+</style>
 </head>
 <body>
 <nav id="daily-workspace-links" aria-label="Meu ambiente" style="display:flex;flex-wrap:wrap;gap:16px;padding:14px 24px;border-bottom:1px solid #334155;font:14px system-ui;background:#10151e;color:#f8fafc">
@@ -37,192 +67,943 @@ nav .icon,.empty-state>.icon{display:none}
 <a style="color:#93c5fd" href="http://127.0.0.1:43128/">Lumen · capturar e estudar</a>
 <span>Voz: Ctrl + Shift + →</span>
 </nav>
-<header class="hero wrap">
- <div class="topline"><div class="eyebrow">Plano de execução / 2026</div><span class="badge">01 — 30 NOVEMBRO</span></div>
- <h1>Side Hustle Internacional <span>— Plano de 30 Dias</span></h1>
- <p class="intro">De 1 a 30 de novembro • Meta: validar oferta, conquistar primeiros clientes e construir receita recorrente</p>
-</header>
-<div class="nav-shell"><div class="wrap top-progress" aria-label="Progresso do plano"><strong id="top-day" class="top-day"></strong><div class="top-track"><div class="bar" role="progressbar" aria-label="Progresso geral do mês" aria-valuemin="0" aria-valuemax="100" id="top-progress-track"><span id="top-progress-bar"></span></div><strong id="top-percent"></strong></div><div id="top-next" class="top-next"></div></div><nav class="wrap" aria-label="Navegação principal" id="nav"></nav></div>
-<main class="wrap" id="main">
- <section id="overview" class="panel" aria-labelledby="overview-title">
-  <div class="section-head"><div class="eyebrow">01 / Direção</div><h2 id="overview-title">Visão Geral</h2><p class="muted">Um mês para transformar uma oferta em evidência real.</p></div>
-  <div class="grid stats" id="stats"></div>
-  <div class="grid two">
-   <div class="card"><span class="eyebrow">Meta final</span><div class="goal">US$ 10.000<span class="muted" style="font-size:.4em;letter-spacing:-.02em">/mês</span></div><p class="muted">Objetivo de longo prazo. Em novembro, o foco é validar a oferta, conquistar primeiros clientes e construir receita recorrente.</p><div class="note">Foco principal: <strong>Digital Products (50%).</strong> AI Automation + Landing Pages para clínicas odontológicas nos EUA (40%), a partir da Semana 2. AI Ads / UGC Ads (10%).</div><div class="totals" id="revenue-summary"></div></div>
-   <div class="card"><h3>Distribuição de esforço</h3><p class="small">Três apostas. Uma prioridade clara.</p><div id="allocations"></div></div>
-  </div>
-  <div class="grid three divider"><div class="card"><span class="eyebrow">02 / Serviço · Semana 2</span><h3 class="divider">AI Automation + Landing Pages</h3><p class="muted">Clínicas odontológicas nos EUA. Oferta com setup e mensalidade, landing page e fluxo de follow-up.</p></div><div class="card"><span class="eyebrow">01 / Foco principal</span><h3 class="divider">Digital Products</h3><p class="muted">Oferta e primeira versão do produto digital na Semana 1; validação e melhoria ao longo do mês.</p></div><div class="card"><span class="eyebrow">03 / Terceiro teste</span><h3 class="divider">AI Ads / UGC Ads</h3><p class="muted">Testar 5 a 10 criativos de anúncio e registrar os resultados para decidir.</p></div></div>
- </section>
- <section id="schedule" class="panel" hidden aria-labelledby="schedule-title"><div class="section-head"><div class="eyebrow">02 / Execução</div><h2 id="schedule-title">Cronograma</h2><p class="muted">Escolha um dia para abrir seu guia de execução. As semanas organizam as entregas; o guia detalha o próximo passo.</p></div><div class="week-tabs" id="week-tabs"></div><div class="schedule-workspace"><div class="card"><div class="between"><h3>Novembro de 2026</h3><span class="small">● Marco · contorno: dia selecionado</span></div><div class="calendar" id="calendar"></div><div class="note timeline-note" id="day-detail" aria-live="polite"></div></div><aside class="card daily-guide" id="daily-guide" aria-live="polite"></aside></div><div class="grid two divider"><div class="card week-detail" id="week-detail"></div><div class="card"><h3>Marcos importantes</h3><div class="milestones" id="milestones" style="grid-template-columns:repeat(2,1fr)"></div></div></div></section>
- <section id="checklists" class="panel" hidden aria-labelledby="check-title"><div class="section-head"><div class="eyebrow">03 / Consistência</div><h2 id="check-title">Checklists</h2><p class="muted">Organizados por semana e área. Marque cada entrega quando estiver concluída.</p></div><div class="grid check-grid" id="check-grid"></div></section>
- <section id="metrics" class="panel" hidden aria-labelledby="metrics-title"><div class="section-head"><div class="eyebrow">04 / Evidência</div><h2 id="metrics-title">Métricas</h2><p class="muted">Registre o acumulado de cada semana. Os totais do mês somam os três setores e o histórico sem setor. Decisões usa estes mesmos registros.</p></div><div class="toolbar"><label for="metric-sector">Setor</label><select id="metric-sector"><option value="1">Digital Products · 50%</option><option value="0">AI Automation + Landing Pages · 40%</option><option value="2">AI Ads / UGC Ads · 10%</option><option value="legacy">Histórico sem setor</option></select><label for="metric-week">Período</label><select id="metric-week"></select><span class="small">Atualize os valores diariamente, sem somar novamente o que já registrou.</span></div><div class="card goals"><h3>Referência de prospecção · a partir da Semana 2</h3><ul><li>50 mensagens por semana</li><li>5 a 10 respostas por semana</li><li>3 calls por semana</li><li>1 proposta por semana</li><li>1 cliente-piloto até o dia 21</li></ul><p class="small" style="margin:12px 0 0">As metas do cronograma continuam válidas: enviar pelo menos 3 propostas até o dia 14.</p></div><div id="finance-summary" class="grid stats"></div><div id="metrics-empty" class="empty-state" hidden></div><div class="grid metric-grid" id="metric-grid"></div><div class="card divider"><h3>Acumulado do mês</h3><div class="totals" id="month-totals"></div><p class="small" style="margin:18px 0 0">Receita e horas são somadas entre semanas. A receita recorrente mensal é a posição mais recente preenchida, e não uma soma. Nenhum valor é estimado.</p></div></section>
- <section id="decisions" class="panel" hidden aria-labelledby="decisions-title"><div class="section-head"><div class="eyebrow">05 / Escolha consciente</div><h2 id="decisions-title">Decisões</h2><p class="muted">Compare as três apostas com dados acumulados de novembro. A decisão deve ser baseada em dados, não em impulso.</p></div><div class="sector-picker" id="decision-sectors"></div><div id="decision-detail"></div><details class="card divider"><summary>Fontes e critérios de leitura</summary><p class="small">Conversão = pedidos / visitas. CAC = investimento em aquisição / novos clientes. Saldo operacional = receita recebida − reembolsos − taxas − custos − aquisição; não inclui impostos, câmbio ou remuneração do seu tempo. Valores ausentes não são tratados como resultados confirmados. As sugestões são heurísticas de validação, não garantias.</p><p class="small"><a href="https://www.shopify.com/blog/customer-acquisition" target="_blank" rel="noopener">Shopify: aquisição e CAC</a> · <a href="https://stripe.com/resources/more/how-to-use-monthly-recurring-revenue-mrr-and-annual-recurring-revenue-arr-to-guide-growth" target="_blank" rel="noopener">Stripe: MRR e ARR</a></p></details></section>
 
-</main>
-<footer class="status" aria-label="Status do plano"><div class="wrap status-inner"><div><label class="stat-label" for="day-input">Dia atual do plano</label><div class="day-controls"><input id="day-input" type="number" min="1" max="30" step="1" aria-label="Dia manual do plano"><select id="day-mode" aria-label="Modo de seleção do dia"><option value="auto">Automático</option><option value="manual">Manual</option></select></div></div><div><span class="stat-label">Progresso geral</span><strong id="status-progress"></strong><div class="bar"><span id="status-bar"></span></div></div><div><span class="stat-label">Tarefas concluídas</span><strong id="status-tasks"></strong></div><div><span class="stat-label">Próximo marco</span><strong id="status-next" class="next"></strong></div><div class="actions"><button id="export">↓ Exportar JSON</button><button id="import">↑ Importar JSON</button><input type="file" id="import-file" accept=".json,application/json" hidden></div></div><div class="wrap save-note" id="save-status" role="status">Dados salvos apenas neste navegador. Exporte um backup para guardar seu progresso.</div></footer>
-<div id="toast" role="status" aria-live="polite"></div>
-<script>
+<header class="hero wrap bos-hero"><div class="topline"><span class="eyebrow">SIDE HUSTLES / BUSINESS OPERATING SYSTEM</span><span class="badge">05 NOV — 05 DEZ 2026</span></div><h1>Construir. Comercializar.<br>Medir o que funciona.</h1><p class="intro">Três frentes conectadas em uma operação pessoal. Próxima ação clara, dados reais e meta ambiciosa de US$ 10.000 de receita bruta recebida no ciclo.</p></header>
+<div class="bos-sticky"><div class="wrap bos-top"><div><span id="bos-top-day"></span><div class="bar"><span id="bos-top-bar"></span></div><strong id="bos-top-progress"></strong></div><span>Digital Products 50% · Serviços 40% · AI Ads 10%</span></div><nav class="wrap" id="bos-nav" aria-label="Frentes e operações"></nav></div>
+<main class="wrap bos-main"><nav id="bos-subnav" aria-label="Módulos da frente"></nav><div id="bos-content" aria-live="polite"></div></main>
+<footer class="bos-footer"><div class="wrap"><p>Dados neste navegador. Exporte backups para transferir ou preservar a operação. Agendamentos e registros são manuais; não publicam conteúdo nem cobram clientes.</p><div class="toolbar"><button data-action="export">Exportar JSON</button><button data-action="import">Importar JSON</button></div></div></footer><div id="bos-notice" role="status">Carregando registros locais com preservação do histórico…</div><input id="bos-import" type="file" accept=".json,application/json" hidden>
+<dialog id="bos-editor" class="bos-dialog" aria-label="Editor de registro"><form id="bos-editor-form"></form></dialog>
+<noscript><p class="wrap">Ative JavaScript para usar o dashboard e acessar os registros locais.</p></noscript>
+
+<script id="bos-core">
 'use strict';
-const KEY='side-hustle-novembro-2026-v1';
-const weeks=[
- {name:'Fundação',range:'1 a 7',start:1,end:7,summary:'Definir oferta, criar landing page demo, montar fluxo de follow-up, configurar perfil em inglês e recebimento internacional.',tasks:[['Oferta e precificação','Definir oferta de AI Automation + Landing Pages'],['Oferta e precificação','Definir preço de setup e mensalidade'],['Demo e automação','Criar landing page demo para clínica odontológica'],['Demo e automação','Criar fluxo de follow-up'],['Perfil e operação','Criar perfil profissional em inglês'],['Perfil e operação','Configurar recebimento internacional'],['Vendas','Criar proposta padrão'],['Vendas','Preparar 3 demonstrações']]},
- {name:'Prospecção',range:'8 a 14',start:8,end:14,summary:'Criar lista de 100 prospects, enviar 10 a 15 mensagens por dia, fazer calls de 15 minutos e enviar pelo menos 3 propostas.',tasks:[['Pesquisa e leads','Pesquisar 100 prospects'],['Pesquisa e leads','Criar planilha de leads'],['Contato e follow-up','Enviar 10 a 15 mensagens por dia'],['Contato e follow-up','Fazer follow-up com quem não responder'],['Calls e propostas','Agendar calls de 15 minutos'],['Calls e propostas','Enviar pelo menos 3 propostas'],['Aprendizado','Registrar objeções e aprendizados']]},
- {name:'Entrega e produto',range:'15 a 21',start:15,end:21,summary:'Fechar 1 a 3 clientes-piloto, entregar rápido, coletar depoimento, lançar a primeira versão do produto digital e testar 5 a 10 criativos de anúncio.',tasks:[['Clientes e entrega','Fechar 1 a 3 clientes-piloto'],['Clientes e entrega','Realizar onboarding do cliente'],['Clientes e entrega','Entregar landing page e automação'],['Prova e case','Coletar depoimento'],['Prova e case','Criar case antes/depois'],['Digital Products','Criar primeira versão do produto digital'],['Digital Products','Criar página de vendas do produto'],['AI Ads / UGC Ads','Testar 5 a 10 criativos de anúncio']]},
- {name:'Otimização e decisão',range:'22 a 30',start:22,end:30,summary:'Analisar métricas, padronizar entrega, dobrar na melhor oferta e planejar dezembro.',tasks:[['Análise de dados','Revisar todas as métricas'],['Análise de dados','Identificar a linha com mais resposta'],['Análise de dados','Identificar a linha com mais pagamento'],['Processos e preço','Padronizar processos e templates'],['Processos e preço','Definir preço final'],['Dezembro','Escolher o foco principal de dezembro'],['Dezembro','Criar plano de 30 dias para dezembro']]}
+const BOS = (() => {
+ const KEY='side-hustles-business-os-v3', OLD='side-hustle-novembro-2026-v1';
+ const collections=['tasks','products','copies','experiments','emails','contents','launches','sales','prospects','expenses','ads','offers','signals','leads','subscriptions','reviews'];
+ const labels={digital:'Digital Products',services:'Landing Pages + AI Automation',ads:'AI Ads / UGC Ads',business:'Negócio',legacy:'Histórico',backlog:'Backlog',todo:'A fazer',progress:'Em andamento',waiting:'Aguardando',completed:'Concluída',cancelled:'Cancelada',critical:'Crítica',high:'Alta',medium:'Média',low:'Baixa'};
+ const app={KEY,OLD,modules:{},state:null,readOnly:false,current:'overview',sub:'',editing:null,schemas:{},filters:{workstream:'',productId:'',priority:'',status:'',deadline:'',category:'',search:''}};
+ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const uid=prefix=>prefix+'-'+(globalThis.crypto?.randomUUID?.()??Date.now().toString(36)+'-'+Math.random().toString(36).slice(2));
+ const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;};
+ const money=n=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'USD'}).format(Number(n)||0);
+ const defaultState=()=>({version:3,cycle:{start:'2026-11-05',end:'2026-12-05',target:10000},...Object.fromEntries(collections.map(c=>[c,[]])),legacy:[],importConflicts:[],settings:{costCoverage:false},createdAt:new Date().toISOString()});
+ function notice(message,error=false){const n=document.querySelector('#bos-notice');if(n){n.textContent=message;n.classList.toggle('error',error);}return message;}
+ function backup(kind,payload){const key=KEY+'-backup-'+kind+'-'+uid('snapshot');localStorage.setItem(key,JSON.stringify(payload));return key;}
+ function save(){if(app.readOnly){notice('Modo de recuperação: exporte os dados originais antes de alterar registros.',true);return false;}try{localStorage.setItem(KEY,JSON.stringify(app.state));notice('Salvo neste navegador · '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}));return true;}catch(e){notice('Não foi possível salvar. Exporte um backup antes de fechar.',true);return false;}}
+ function validDate(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;const d=new Date(value+'T12:00:00Z');return Number.isFinite(d.getTime())&&d.toISOString().slice(0,10)===value;}
+ function validate(input){
+  if(!input||typeof input!=='object'||input.version!==3)throw Error('Backup incompatível. Use um backup do sistema ou importe o histórico antigo.');
+  const raw=JSON.stringify(input);if(raw.length>15000000)throw Error('Backup maior que o limite de 15 MB.');
+  function inspect(v){if(!v||typeof v!=='object')return;for(const k of Object.keys(v)){if(['__proto__','constructor','prototype'].includes(k))throw Error('Campo inseguro no backup.');if(typeof v[k]==='number'&&!Number.isFinite(v[k]))throw Error('Número inválido.');inspect(v[k]);}}inspect(input);
+  const out=JSON.parse(raw);
+  for(const c of collections){if(!Array.isArray(out[c])||out[c].length>10000)throw Error('Coleção inválida: '+c);const ids=new Set();for(const r of out[c]){if(!r||typeof r!=='object'||typeof r.id!=='string'||!r.id||ids.has(r.id))throw Error('Registro sem ID ou duplicado em '+c);ids.add(r.id);}}
+  if(!out.cycle||out.cycle.start!=='2026-11-05'||out.cycle.end!=='2026-12-05'||out.cycle.target!==10000)throw Error('Ciclo inválido.');
+  for(const t of out.tasks){if(!['digital','services','ads','business','legacy'].includes(t.workstream)||!['backlog','todo','progress','waiting','completed','cancelled'].includes(t.status)||!['critical','high','medium','low'].includes(t.priority)||typeof t.title!=='string'||!t.title.trim()||!Array.isArray(t.dependencies))throw Error('Tarefa inválida.');if(t.due&&!validDate(t.due))throw Error('Prazo inválido.');}
+  const byId=new Map(out.tasks.map(t=>[t.id,t]));const visited=new Set(),visiting=new Set();function visit(id){if(visiting.has(id))throw Error('Dependências circulares.');if(visited.has(id))return;const task=byId.get(id);if(!task)throw Error('Dependência inexistente: '+id);visiting.add(id);for(const dep of task.dependencies)visit(dep);visiting.delete(id);visited.add(id);}out.tasks.forEach(t=>visit(t.id));
+  for(const c of collections)for(const record of out[c]){for(const key of ['price','betaPrice','plannedPrice','previousPrice','discount','monthlyAmount','estimate','actual','amount','collected','refunds','proposalValue','setup','monthly','impressions','engagement','clicks','leads','purchases','traffic','interest','visits','checkouts','subscribers','emailClicks','qualifiedLeads','trafficA','trafficB','purchasesA','purchasesB','spend','revenue'])if(record[key]!==undefined&&record[key]!==null&&(typeof record[key]!=='number'||!Number.isFinite(record[key])||record[key]<0||record[key]>1e12))throw Error('Número inválido: '+c+'.'+key);if(record.endDate&&record.date&&record.endDate<record.date)throw Error('O fim do período é anterior ao início.');for(const key of ['date','endDate','startDate','launchDate','followup','lastContact','publicationDate','offerExpiration','due'])if(record[key]&&!validDate(record[key]))throw Error('Data inválida: '+c+'.'+key);const error=app.validateBusinessRecord?.(c,record);if(error)throw Error(error);}
+  for(const c of ['sales','expenses','subscriptions','prospects','products','offers','signals','contents','experiments','ads'])for(const r of out[c])for(const [k,v] of Object.entries(r)){if(typeof v==='number'&&(!Number.isFinite(v)||v<0||v>1e12))throw Error('Valor inválido: '+c+'.'+k);if((k.endsWith('Url')||k==='url')&&v&&!/^https?:\/\//i.test(v))throw Error('Use links http ou https.');}
+  for(const r of out.sales){if((r.collected??0)>(r.amount??0)||(r.refunds??0)>(r.collected??0))throw Error('Recebimento excede valor ou reembolso excede recebimento.');}
+  out.legacy=Array.isArray(out.legacy)?out.legacy:[];out.importConflicts=Array.isArray(out.importConflicts)?out.importConflicts:[];out.settings=out.settings||{costCoverage:false};return out;
+ }
+ function merge(local,incoming){const result=JSON.parse(JSON.stringify(local));for(const c of collections){const map=new Map(result[c].map(r=>[r.id,r]));for(const record of incoming[c]){const existing=map.get(record.id);if(!existing){result[c].push(record);map.set(record.id,record);}else if(JSON.stringify(existing)!==JSON.stringify(record)){const conflict={collection:c,id:record.id,incoming:record};if(!result.importConflicts.some(x=>JSON.stringify(x)===JSON.stringify(conflict)))result.importConflicts.push(conflict);}}}for(const snapshot of incoming.legacy||[])if(!result.legacy.some(x=>JSON.stringify(x.data)===JSON.stringify(snapshot.data)))result.legacy.push(snapshot);for(const conflict of incoming.importConflicts||[])if(!result.importConflicts.some(x=>JSON.stringify(x)===JSON.stringify(conflict)))result.importConflicts.push(conflict);return validate(result);}
+ function migrateLegacy(raw){const result=defaultState();if(!raw||typeof raw!=='object'||![1,2].includes(raw.version))throw Error('Histórico inválido.');result.legacy.push({id:'legacy-original',label:'Plano de 1–30 novembro · estado original completo',data:JSON.parse(JSON.stringify(raw))});for(const seed of app.legacyTaskSeeds||[]){const sourceId=raw.version===1?seed.v1Id:seed.oldId;result.tasks.push({...seed,status:raw.checks?.[sourceId]===true?'completed':'backlog',completedAt:raw.checks?.[sourceId]===true?'Data original não informada':'',dependencies:[],cycle:'legacy'});}return result;}
+ function progress(tasks){const active=tasks.filter(t=>t.status!=='cancelled');const done=active.filter(t=>t.status==='completed').length;return {done,total:active.length,pct:active.length?Math.round(done/active.length*100):0};}
+ function updateTask(id,patch){if(app.readOnly)throw Error('Modo de recuperação: edição bloqueada.');const old=app.state.tasks.find(t=>t.id===id);if(!old)throw Error('Tarefa não encontrada.');const next={...old,...patch,updatedAt:new Date().toISOString()};if(next.status==='completed'){const blockers=next.dependencies.filter(dep=>app.state.tasks.find(t=>t.id===dep)?.status!=='completed');if(blockers.length)throw Error('Conclua as dependências antes de finalizar esta tarefa.');next.completedAt=next.completedAt||new Date().toISOString();}else next.completedAt='';const candidate={...app.state,tasks:app.state.tasks.map(t=>t.id===id?next:t)};validate(candidate);app.state=candidate;save();return true;}
+ function summaryCards(cards){return '<div class="grid bos-stats">'+cards.map(([label,value,hint])=>`<article class="card"><span class="stat-label">${esc(label)}</span><strong class="bos-number ${String(value).length>45?'bos-long-value':''}">${esc(value)}</strong>${hint?`<p class="small">${esc(hint)}</p>`:''}</article>`).join('')+'</div>';}
+ function options(field){const a=typeof field.options==='function'?field.options():field.options||[];return a.map(o=>Array.isArray(o)?o:[o,o]);}
+ function fieldHtml(f,value=''){const common=`name="${esc(f.key)}" id="edit-${esc(f.key)}" ${f.required?'required':''}`;let control;if(f.type==='select')control=`<select ${common}><option value="">Selecione</option>${options(f).map(([v,label])=>`<option value="${esc(v)}" ${String(value)===String(v)?'selected':''}>${esc(label)}</option>`).join('')}</select>`;else if(f.type==='textarea')control=`<textarea ${common} rows="4" maxlength="100000">${esc(value)}</textarea>`;else if(f.type==='checkbox')control=`<input ${common} type="checkbox" ${value?'checked':''}>`;else control=`<input ${common} type="${esc(f.type||'text')}" value="${esc(value)}" ${f.type==='number'?`min="${f.min??0}" max="1000000000000" step="${f.step??'0.01'}"`:''} ${f.type==='url'?'placeholder="https://"':''} maxlength="100000">`;return `<label class="bos-field" for="edit-${esc(f.key)}">${esc(f.label)}${control}</label>`;}
+ function crud(collection,fields,opts={}){const key=uid('form');app.schemas[key]={collection,fields,opts};const records=app.state[collection].filter(opts.filter||(()=>true));if(opts.sort)records.sort(opts.sort);return `<div class="bos-section-heading"><h3>${esc(opts.title||'Registros')}</h3>${opts.allowAdd===false?'':`<button class="primary" data-add="${key}">+ Adicionar</button>`}</div><div class="grid bos-records">${records.length?records.map(r=>`<article class="card"><span class="small">${esc(r.id)}</span><h3>${esc(r.name||r.title||r.company||r.campaign||r.subject||r.objective||r.label||'Registro')}</h3><dl>${fields.slice(0,7).filter(f=>r[f.key]!==''&&r[f.key]!=null).map(f=>`<div><dt>${esc(f.label)}</dt><dd>${esc(f.type==='select'?(options(f).find(([v])=>String(v)===String(r[f.key]))?.[1]||r[f.key]):f.type==='checkbox'?(r[f.key]?'Sim':'Não'):String(r[f.key]).slice(0,240))}</dd></div>`).join('')}</dl><button data-edit="${key}" data-id="${esc(r.id)}">Abrir / editar</button>${r.revisions?.length?`<details><summary>${r.revisions.length} versão(ões) anterior(es)</summary><pre>${esc(JSON.stringify(r.revisions,null,2))}</pre></details>`:''}</article>`).join(''):'<div class="empty-state"><div><strong>Nenhum registro ainda.</strong><p>Adicione dados reais para acompanhar este módulo.</p></div></div>'}</div>`;}
+ const taskFields=()=>[{key:'title',label:'Tarefa',required:true},{key:'workstream',label:'Frente',type:'select',options:['digital','services','ads','business'].map(k=>[k,labels[k]]),required:true},{key:'productId',label:'Produto / serviço',type:'select',options:[...app.state.products.map(p=>[p.id,p.name]),...app.state.offers.map(p=>[p.id,p.name])]},{key:'category',label:'Categoria'},{key:'priority',label:'Prioridade',type:'select',required:true,options:['critical','high','medium','low'].map(k=>[k,labels[k]])},{key:'status',label:'Status',type:'select',required:true,options:['backlog','todo','progress','waiting','completed','cancelled'].map(k=>[k,labels[k]])},{key:'due',label:'Prazo',type:'date'},{key:'estimate',label:'Tempo estimado (min)',type:'number',step:1},{key:'actual',label:'Tempo realizado (min)',type:'number',step:1},{key:'completedAt',label:'Conclusão real',type:'text'},{key:'dependencies',label:'Dependências · IDs separados por vírgula',type:'textarea'},{key:'stage',label:'Etapa do produto',type:'select',options:app.productStages||[]},{key:'essential',label:'Tarefa essencial (desmarcada = melhoria opcional)',type:'checkbox'},{key:'serviceType',label:'Tipo de serviço',type:'select',options:[['landing','Landing Page'],['automation','AI Automation']]},{key:'notes',label:'Notas',type:'textarea'}];
+ function taskView(filter=()=>true){const tasks=app.state.tasks.filter(filter);const p=progress(tasks);const key=uid('task');app.schemas[key]={collection:'tasks',fields:taskFields(),opts:{defaults:{workstream:'digital',priority:'medium',status:'todo',dependencies:[],cycle:'current'}}};return `<div class="bos-section-heading"><p class="small">${p.done}/${p.total} concluídas · ${p.pct}% · canceladas fora do percentual</p><button data-add="${key}">+ Nova tarefa</button></div><div class="bar"><span style="width:${p.pct}%"></span></div><div class="bos-task-list">${tasks.length?tasks.map(t=>{const blocked=t.dependencies.some(id=>app.state.tasks.find(d=>d.id===id)?.status!=='completed');return `<article class="bos-task ${t.status==='completed'?'done':''}"><label><input type="checkbox" data-check-task="${esc(t.id)}" ${t.status==='completed'?'checked':''} ${t.status==='cancelled'?'disabled':''}><span>${esc(t.title)}</span></label><div class="bos-task-meta"><span>${esc(labels[t.workstream]||t.workstream)}</span><span>${esc(t.category)}</span><span>${esc(labels[t.priority])}</span><span>${esc(labels[t.status])}${blocked?' · dependência pendente':''}</span><span>${esc(t.due||'Sem prazo')}${t.due<today()&&t.due&&!['completed','cancelled'].includes(t.status)?' · atrasada':''}</span><button data-edit="${key}" data-id="${esc(t.id)}">Editar</button></div></article>`;}).join(''):'<p class="empty-tip">Nenhuma tarefa neste filtro.</p>'}</div>`;}
+ function openEditor(schemaKey,id){const schema=app.schemas[schemaKey];if(!schema)return;const existing=id?app.state[schema.collection].find(r=>r.id===id):null;const record=existing||{...schema.opts.defaults};app.editing={schema,id};const form=document.querySelector('#bos-editor-form');form.innerHTML=`<div class="bos-section-heading"><h3>${existing?'Editar registro':'Adicionar registro'}</h3><button type="button" data-close-editor aria-label="Fechar editor">Fechar</button></div><p class="small">Campos vazios significam não informado. Alterações ficam apenas neste navegador.</p><div class="bos-form-grid">${schema.fields.map(f=>fieldHtml(f,Array.isArray(record[f.key])?record[f.key].join(', '):record[f.key]??'')).join('')}</div><p id="bos-form-error" class="bos-error" role="alert"></p><button type="submit" class="primary">Salvar registro</button>`;document.querySelector('#bos-editor').showModal();}
+ function validateFields(fields,data){for(const f of fields){const v=data[f.key];if(f.required&&(v===''||v==null))throw Error('Preencha: '+f.label);if(f.type==='number'&&v!==null&&v!==undefined&&(!Number.isFinite(v)||v<(f.min??0)||v>1e12||(f.step===1&&!Number.isInteger(v))))throw Error('Número inválido: '+f.label);if(f.type==='select'&&v&&!options(f).some(([o])=>String(o)===String(v)))throw Error('Opção inválida: '+f.label);if(f.type==='date'&&v&&!validDate(v))throw Error('Data inválida: '+f.label);if(f.type==='url'&&v&&!/^https?:\/\//i.test(v))throw Error('Use um endereço http ou https: '+f.label);}}
+ function persistRecord(collection,id,data,fields){if(app.readOnly)throw Error('Modo de recuperação: edição bloqueada.');validateFields(fields,data);const records=app.state[collection],existing=id?records.find(r=>r.id===id):null;const record={...existing,...data,id:id||uid(collection),updatedAt:new Date().toISOString()};if(collection==='tasks'){record.dependencies=Array.isArray(record.dependencies)?record.dependencies:String(record.dependencies||'').split(',').map(v=>v.trim()).filter(Boolean);if(existing){updateTask(id,record);return record;}record.cycle=record.cycle||'current';if(record.status==='completed'){if(record.dependencies.some(dep=>app.state.tasks.find(t=>t.id===dep)?.status!=='completed'))throw Error('Conclua as dependências.');record.completedAt=new Date().toISOString();}}
+  if(existing){const previous={...existing};delete previous.revisions;record.revisions=[...(existing.revisions||[]),{at:new Date().toISOString(),record:previous}];}
+  const titleKey=['name','title','company','subject'].find(k=>record[k]);if(!existing&&titleKey&&records.some(r=>String(r[titleKey]||'').trim().toLowerCase()===String(record[titleKey]).trim().toLowerCase()&&r.productId===record.productId&&r.workstream===record.workstream))throw Error('Já existe um registro equivalente. Abra e edite o existente.');const next={...app.state,[collection]:existing?records.map(r=>r.id===id?record:r):[...records,record]};validate(next);app.state=next;save();return record;}
+ function register(key,module){app.modules[key]=module;}
+ function open(key,sub){if(!app.modules[key])return;app.current=key;app.sub=sub||app.modules[key].tabs?.[0]?.[0]||'';refresh();document.querySelector('.bos-main')?.scrollIntoView({block:'start',behavior:'instant'});}
+ function refresh(){if(!app.state)return;app.schemas={};document.querySelector('#bos-nav').innerHTML=['overview','digital','services','ads','finance','operations'].filter(k=>app.modules[k]).map(k=>[k,app.modules[k]]).map(([key,module])=>`<button data-module="${key}" class="${key===app.current?'active':''}" aria-current="${key===app.current?'page':'false'}">${esc(module.label)}</button>`).join('');const module=app.modules[app.current];document.querySelector('#bos-subnav').innerHTML=(module.tabs||[]).map(([key,label])=>`<button data-sub="${key}" class="${key===app.sub?'active':''}">${esc(label)}</button>`).join('');const content=document.querySelector('#bos-content');content.innerHTML=module.render(app.sub);module.bind?.(content,app.sub);const p=progress(app.state.tasks.filter(t=>t.cycle==='current'));document.querySelector('#bos-top-progress').textContent=`${p.pct}% · ${p.done}/${p.total} tarefas`;document.querySelector('#bos-top-bar').style.width=p.pct+'%';document.querySelector('#bos-top-day').textContent=today()<'2026-11-05'?'Início em 5 nov':today()>'2026-12-05'?'Ciclo encerrado':`Dia ${Math.round((Date.parse(today())-Date.parse('2026-11-05'))/86400000)+1} de 31`;}
+ function download(data,name){const blob=new Blob([typeof data==='string'?data:JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);}
+ function importData(input){if(app.readOnly)throw Error('Modo de recuperação: importação bloqueada.');let incoming;if(input.version===3)incoming=validate(input);else incoming=migrateLegacy(input);backup('before-import',app.state);app.state=merge(app.state,incoming);save();refresh();notice('Importado sem substituir registros locais. Conflitos preservados em Dados.');return app.state;}
+ function init(){
+  let loaded=null;try{const raw=localStorage.getItem(KEY);if(raw)loaded=validate(JSON.parse(raw));}catch(e){app.readOnly=true;notice('Dados salvos não puderam ser lidos. Nada foi sobrescrito. Exporte o original em Dados.',true);}
+  app.state=loaded||defaultState();if(!loaded&&!app.readOnly){try{const old=localStorage.getItem(OLD);if(old){backup('original-v1-v2',old);const migrated=migrateLegacy(JSON.parse(old));app.state=merge(app.state,migrated);}}catch(e){app.readOnly=true;notice('Histórico não pôde ser migrado. O original foi mantido; exporte-o em Dados.',true);}}
+  const seeds=[app.productSeeds,app.businessSeeds,app.cycleSeeds].filter(Boolean);for(const seed of seeds)for(const c of collections)for(const record of seed[c]||[])if(!app.state[c].some(r=>r.id===record.id))app.state[c].push(JSON.parse(JSON.stringify(record)));
+  if(!loaded)for(const t of app.legacyTaskSeeds||[]){if(!app.state.tasks.some(r=>r.id===t.id)){const raw=app.state.legacy.find(x=>x.id==='legacy-original')?.data;const completed=!!raw?.checks?.[t.oldId];app.state.tasks.push({...t,status:completed?'completed':'backlog',completedAt:completed?'Data original não informada':'',dependencies:[],cycle:'legacy'});}}
+  app.state=validate(app.state);if(!app.readOnly){try{save();}catch(e){app.readOnly=true;notice('Backup de segurança indisponível. Dados mantidos; exporte antes de editar.',true);}}
+  document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.module)open(b.dataset.module,b.dataset.subTarget);else if(b.dataset.sub)open(app.current,b.dataset.sub);else if(b.dataset.add)openEditor(b.dataset.add);else if(b.dataset.edit)openEditor(b.dataset.edit,b.dataset.id);else if(b.hasAttribute('data-close-editor'))document.querySelector('#bos-editor').close();else if(b.dataset.action==='export')download({...app.state,exportedAt:new Date().toISOString()},'side-hustles-business-os-backup.json');else if(b.dataset.action==='raw')download(localStorage.getItem(KEY)||localStorage.getItem(OLD)||'{}','side-hustles-original-raw.json');else if(b.dataset.action==='import')document.querySelector('#bos-import').click();});
+  document.addEventListener('change',e=>{const id=e.target.dataset.checkTask;if(id){try{updateTask(id,{status:e.target.checked?'completed':'todo'});refresh();}catch(err){e.target.checked=!e.target.checked;notice(err.message,true);}}});
+  document.querySelector('#bos-editor-form').addEventListener('submit',e=>{e.preventDefault();if(app.readOnly){notice('Modo de recuperação: alterações bloqueadas.',true);return;}try{const {schema,id}=app.editing;const data={...schema.opts.defaults};for(const f of schema.fields){const field=e.target.elements.namedItem(f.key);data[f.key]=f.type==='checkbox'?field.checked:f.type==='number'?(field.value===''?null:Number(field.value)):field.value.trim();}persistRecord(schema.collection,id,data,schema.fields);document.querySelector('#bos-editor').close();refresh();}catch(err){document.querySelector('#bos-form-error').textContent=err.message;}});
+  document.querySelector('#bos-import').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{if(app.readOnly)throw Error('Resolva a recuperação dos dados antes de importar.');if(f.size>15000000)throw Error('Arquivo maior que 15 MB.');importData(JSON.parse(await f.text()));}catch(err){notice(err.message,true);}finally{e.target.value='';}});
+  refresh();
+ }
+ Object.assign(app,{esc,uid,today,money,notice,save,validate,merge,migrateLegacy,progress,updateTask,summaryCards,crud,taskView,register,open,refresh,init,defaultState,persistRecord,importData,backup,download,labels,collections,taskFields});return app;
+})();
+
+</script>
+<script id="bos-products">
+/* Digital Products: shared records and tasks; no external dependencies. */
+(function(B){
+ 'use strict';
+ const stages=[['idea','Ideia'],['validation','Validação'],['development','Desenvolvimento'],['testing','Testes internos'],['beta','Beta pronta'],['commercial','Preparação comercial'],['ready','Pronto para lançar'],['launched','Lançado'],['optimization','Otimização']];
+ const pubStatuses=[['draft','Rascunho'],['review','Em revisão'],['approved','Aprovado'],['scheduled','Agendado'],['published','Publicado']];
+ const funnelStages=[['awareness','Conhecimento'],['interest','Interesse'],['consideration','Consideração'],['launch','Lançamento'],['followup','Follow-up'],['onboarding','Onboarding'],['retention','Feedback e retenção']];
+ const channels=['LinkedIn','X / Twitter','Reddit','Comunidades de desenvolvedores','Fóruns relevantes','Outras comunidades aprovadas','Email','Direto'];
+ const field=(key,label,type='text',extra={})=>({key,label,type,...extra});
+ const num=(key,label)=>field(key,label,'number',{min:0,step:.01});
+ const count=(key,label)=>field(key,label,'number',{min:0,step:1});
+ const select=(key,label,options)=>field(key,label,'select',{options});
+ const area=(key,label)=>field(key,label,'textarea');
+ const related=()=>({...select('productId','Produto',B.state.products.map(p=>[p.id,p.name])),required:true});
+ const productFields=[field('name','Nome do produto','text',{required:true}),area('description','Descrição'),field('audience','Público-alvo'),area('problem','Problema principal resolvido'),field('category','Categoria'),select('stage','Etapa do ciclo',stages),select('status','Status do produto',[['needs-review','Precisa de revisão'],['active','Em andamento'],['waiting','Aguardando'],['approved','Aprovado'],['paused','Pausado']]),num('price','Preço atual (US$)'),num('previousPrice','Preço anterior (US$)'),num('betaPrice','Preço beta (US$)'),num('plannedPrice','Preço oficial planejado (US$)'),field('launchDate','Data de lançamento','date'),field('format','Formato de entrega'),field('language','Idioma do produto'),field('market','Mercado principal'),field('salesUrl','URL da página de vendas','url'),field('checkoutUrl','URL do checkout','url'),select('marketingStatus','Status de marketing',[['not-started','Não iniciado'],['preparing','Em preparação'],['ready','Pronto'],['running','Em divulgação'],['reviewing','Em otimização']]),area('feedback','Feedback dos clientes'),area('readinessNotes','Histórico de prontidão e decisões'),area('nextAction','Próxima ação importante')];
+ const groups=[
+ ['readiness','Preparação do produto','2026-11-06',[
+ ['development','Finalizar a estrutura do produto.'],['development','Completar todas as páginas principais.'],['testing','Revisar navegação e usabilidade.'],['testing','Testar bancos de dados e visualizações.'],['testing','Testar fórmulas e trackers.'],['testing','Revisar as instruções.'],['testing','Testar a experiência completa do usuário.'],['beta','Preparar as instruções de entrega.'],['beta','Aprovar a versão beta.']]],
+ ['positioning','Posicionamento e oferta','2026-11-08',[
+ ['idea','Definir a promessa principal de marketing.'],['idea','Definir o cliente ideal.'],['validation','Identificar as principais dores.'],['validation','Definir a transformação desejada.'],['validation','Listar os principais benefícios do produto.'],['validation','Definir diferenciais.'],['validation','Identificar objeções de compra.'],['commercial','Definir a estrutura da oferta.'],['validation','Validar o preço beta.'],['commercial','Definir o preço oficial inicial.']]],
+ ['sales-page','Página de vendas','2026-11-09',[
+ ['commercial','Criar o título principal.'],['commercial','Escrever o subtítulo de apoio.'],['commercial','Definir o gancho de abertura.'],['commercial','Escrever a seção do problema.'],['commercial','Apresentar a solução proposta.'],['commercial','Explicar como o produto funciona.'],['commercial','Apresentar as funcionalidades do produto.'],['commercial','Traduzir funcionalidades em benefícios.'],['commercial','Adicionar capturas de tela e prévias do produto.'],['commercial','Escrever a seção de conteúdo do produto.'],['commercial','Definir bônus, se aplicável.'],['commercial','Criar a seção de preços.'],['commercial','Escrever as perguntas frequentes.'],['commercial','Adicionar o CTA principal.'],['commercial','Adicionar CTAs secundários onde fizer sentido.'],['ready','Revisar a página de vendas completa.'],['ready','Testar a responsividade no celular.'],['ready','Testar os links de checkout e entrega.']]],
+ ['email','Email marketing','2026-11-10',[
+ ['commercial','Definir o objetivo do email marketing.'],['commercial','Criar o email de pré-lançamento.'],['commercial','Criar o email de anúncio do produto.'],['commercial','Criar o email de apresentação da oferta.'],['commercial','Criar um email para tratar objeções.'],['commercial','Criar o lembrete de lançamento.'],['commercial','Criar o follow-up pós-lançamento.'],['commercial','Criar o email de onboarding do cliente.'],['commercial','Criar um email para pedir feedback.']]],
+ ['distribution','Conteúdo e distribuição','2026-11-11',[
+ ['commercial','Definir a estratégia de conteúdo do produto.'],['commercial','Criar conteúdo para LinkedIn.'],['commercial','Criar publicações para X.'],['commercial','Preparar contribuições para comunidades do Reddit.'],['commercial','Identificar comunidades relevantes de desenvolvedores.'],['commercial','Criar publicações educativas.'],['commercial','Criar conteúdo de demonstração do produto.'],['commercial','Preparar capturas de tela do produto.'],['commercial','Criar anúncios de lançamento.'],['ready','Agendar as datas de publicação.'],['optimization','Registrar conteúdos publicados e resultados.']]],
+ ['launch','Execução do lançamento','2026-11-18',[
+ ['ready','Confirmar a versão final do produto.'],['ready','Confirmar a página de vendas.'],['ready','Confirmar o processamento de pagamentos.'],['ready','Confirmar a entrega automática ou manual.'],['ready','Testar a experiência completa de compra.'],['ready','Preparar os anúncios de lançamento.'],['launched','Publicar a campanha inicial.'],['launched','Acompanhar tráfego e engajamento.'],['launched','Acompanhar prospects interessados.'],['launched','Acompanhar compras.'],['optimization','Fazer follow-up com prospects interessados.'],['optimization','Coletar feedback dos clientes.'],['optimization','Documentar melhorias.']]],
+ ['offer-review','Avaliação da oferta','2026-11-11',[
+ ['validation','A oferta resolve um problema claro?'],['validation','O cliente-alvo é específico?'],['commercial','O valor é compreensível?'],['commercial','O preço combina com o valor percebido?'],['ready','O produto está pronto para entregar?'],['ready','Todas as afirmações têm evidência?'],['ready','O CTA está claro?']]]
+ ];
+ const seedTasks=groups.flatMap(([category,categoryLabel,due,items])=>items.map(([stage,title],i)=>({id:`product-a-${category}-${i+1}`,title,workstream:'digital',productId:'product-a',category:categoryLabel,priority:category==='readiness'?'critical':'high',status:'todo',due,estimate:30,actual:null,dependencies:[],notes:'Checklist de comercialização; confirmar a conclusão com evidência real.',stage,cycle:'current',essential:true,source:'product-a-commercialization'})));
+ B.productSeeds={products:[{id:'product-a',name:'Global Dev Job Search System',description:'Template Notion em inglês para organizar e gerenciar a busca por oportunidades internacionais de emprego.',audience:'Desenvolvedores buscando oportunidades internacionais',problem:'Organizar candidaturas, oportunidades, contatos e acompanhamento da busca internacional.',category:'Template de produtividade',stage:'testing',status:'needs-review',price:19,betaPrice:19,plannedPrice:29,previousPrice:null,format:'Template Notion',language:'English',market:'Estados Unidos; desenvolvedores internacionais',marketingStatus:'not-started',launchDate:'',salesUrl:'',checkoutUrl:'',feedback:'',readinessNotes:'04/11/2026: decisão comercial C — NOT READY para clientes pagantes. Beta privada tecnicamente revisada; duplicação em outro workspace, uso por pessoa sem familiaridade, aceitação mobile, lembretes, políticas e pagamento/entrega ainda exigem validação. Esta nota preserva uma decisão histórica; não confirma testes atuais.',nextAction:'Confirmar a prontidão da beta até 6 de novembro; depois preparar oferta, página e divulgação.'}],tasks:seedTasks};
+ let current='product-a', stageFilter='all';
+ const prod=()=>B.state.products.find(p=>p.id===current)||B.state.products[0];
+ const forProduct=r=>r.productId===current;
+ const tasks=()=>B.state.tasks.filter(t=>t.workstream==='digital'&&t.productId===current&&t.cycle!=='legacy');
+ const header=()=>`<div class="product-context"><label>Produto em foco<select id="digital-product">${B.state.products.map(p=>`<option value="${B.esc(p.id)}" ${p.id===current?'selected':''}>${B.esc(p.name)}</option>`).join('')}</select></label><p class="small">Product Marketing &amp; Launch Center · 50% do esforço</p></div>`;
+ const empty=()=>'<div class="card"><h3>Nenhum produto cadastrado</h3><p>Cadastre um produto no portfólio para organizar sua execução comercial.</p></div>';
+ function stageCards(){return `<div class="lifecycle-grid">${stages.map(([id,label])=>{const p=B.progress(tasks().filter(t=>t.stage===id));return `<button data-digital-stage="${id}" class="card ${stageFilter===id?'active':''}" aria-pressed="${stageFilter===id}"><span>${B.esc(label)}</span><strong>${p.pct}%</strong><small>${p.done}/${p.total} tarefas</small></button>`;}).join('')}</div>`;}
+ function portfolio(){const p=prod(),stats=p&&statsFor(p.id);return `${header()}<div class="note">Um produto tecnicamente pronto ainda precisa de oferta, página, pagamento, entrega e divulgação validados. A etapa e o preço são decisões manuais; o sistema não os altera ao concluir tarefas.</div>${p?B.summaryCards([['Progresso comercial',B.progress(tasks()).pct+'%','Tarefas compartilhadas com o Master Checklist'],['Vendas confirmadas',stats.purchases,'Somente compras confirmadas'],['Receita bruta',B.money(stats.gross),'Registros do produto'],['Próxima ação',p.nextAction||'Definir','Revisão manual']]):''}${B.crud('products',productFields,{title:'Portfólio de produtos',defaults:{stage:'idea',status:'needs-review',marketingStatus:'not-started'}})}`;}
+ function development(){return `${header()}${prod()?stageCards()+`<div class="toolbar"><button data-digital-stage="all">Todas as etapas</button><span class="small">Selecionar uma etapa filtra as mesmas tarefas do Master Checklist.</span></div>`+B.taskView(t=>t.workstream==='digital'&&t.productId===current&&t.cycle!=='legacy'&&(stageFilter==='all'||t.stage===stageFilter)):empty()}`;}
+ function pricing(){const p=prod();if(!p)return empty();const stats=statsFor(p.id);return header()+B.summaryCards([['Preço atual',p.price==null?'Não informado':B.money(p.price),'Não é alterado automaticamente'],['Preço beta',p.betaPrice==null?'Não informado':B.money(p.betaPrice),'Produto A: US$19'],['Preço planejado',p.plannedPrice==null?'Não informado':B.money(p.plannedPrice),'Produto A: US$29'],['Vendas / receita',stats.purchases+' / '+B.money(stats.gross),'Compras confirmadas']])+B.crud('products',[field('name','Produto'),num('price','Preço atual (US$)'),num('previousPrice','Preço anterior (US$)'),num('betaPrice','Preço beta (US$)'),num('plannedPrice','Preço oficial planejado (US$)'),num('discount','Desconto (%)'),field('offerExpiration','Validade da oferta','date'),area('bonuses','Bônus'),field('paymentOptions','Opções de pagamento'),field('checkoutUrl','Checkout','url')],{title:'Configuração de preço e oferta',filter:r=>r.id===current,allowAdd:false})+`<div class="card divider"><h3>Comparar cenários de preço</h3><p class="small">Simulação, não previsão de vendas. Não altera o preço cadastrado.</p><div class="scenario-fields"><label>Preço A (US$)<input id="scenario-a" type="number" min="0" step="0.01" value="${B.esc(p.betaPrice??19)}"></label><label>Preço B (US$)<input id="scenario-b" type="number" min="0" step="0.01" value="${B.esc(p.plannedPrice??29)}"></label><label>Compras hipotéticas<input id="scenario-orders" type="number" min="0" step="1" value="10"></label></div><p id="scenario-result" class="small"></p></div><h3 class="divider">Avaliação da oferta</h3>`+B.taskView(t=>t.productId===current&&t.category==='Avaliação da oferta');}
+ function copy(){return header()+B.crud('copies',[field('name','Nome da versão','text',{required:true}),related(),field('version','Identificador da versão'),area('headlines','Títulos'),area('subheadlines','Subtítulos'),area('hooks','Ganchos'),area('problem','Problema'),area('solution','Solução'),area('features','Funcionalidades'),area('benefits','Benefícios'),area('proof','Prova social e fonte da evidência'),area('faq','Perguntas frequentes'),area('ctas','Variações de CTA'),select('status','Status',pubStatuses),field('url','Página publicada','url')],{title:'Versões da página de vendas',filter:forProduct,defaults:{productId:current,status:'draft'}})+`<p class="note">Guarde cada versão como um registro separado. Não invente depoimentos, resultados de usuários ou afirmações de desempenho.</p>`+B.crud('experiments',[field('name','Nome do experimento','text',{required:true}),related(),field('versionA','Versão A'),field('versionB','Versão B'),area('hypothesis','Hipótese'),field('date','Data de publicação','date'),count('trafficA','Visitas A'),count('trafficB','Visitas B'),count('purchasesA','Compras A'),count('purchasesB','Compras B'),area('result','Resultado observado'),area('decision','Decisão')],{title:'Experimentos de copy',filter:forProduct,defaults:{productId:current}})+`<h3 class="divider">Checklist da página</h3>`+B.taskView(t=>t.productId===current&&t.category==='Página de vendas');}
+ function emails(){return header()+B.crud('emails',[field('name','Nome da campanha','text',{required:true}),related(),select('funnelStage','Etapa do funil',funnelStages),field('subject','Assunto'),area('body','Conteúdo do email'),field('audience','Público-alvo'),field('date','Data de publicação','date'),select('status','Status',pubStatuses),field('cta','CTA'),area('notes','Notas de desempenho')],{title:'Campanhas de email',filter:forProduct,defaults:{productId:current,status:'draft',funnelStage:'awareness'}})+`<p class="small">Planejamento e registro manual: agendar aqui não envia emails nem publica campanhas.</p>`+B.taskView(t=>t.productId===current&&t.category==='Email marketing');}
+ function contents(){return header()+B.crud('contents',[field('name','Título do conteúdo','text',{required:true}),related(),select('platform','Canal',channels),field('audience','Público-alvo'),select('format','Formato',['Publicação educativa','Problema e solução','Tutorial','Demonstração do produto','Build in public','Case com evidência','Anúncio de produto','Feedback do cliente','Lembrete de lançamento']),area('message','Mensagem principal'),field('cta','CTA'),field('date','Data de publicação','date'),select('status','Status',pubStatuses),field('url','URL publicada','url'),count('impressions','Visualizações / impressões'),count('engagement','Engajamento'),count('clicks','Cliques'),count('leads','Leads gerados'),count('purchases','Compras atribuídas'),area('notes','Notas de desempenho')],{title:'Calendário de conteúdo e distribuição',filter:forProduct,defaults:{productId:current,status:'draft'},sort:(a,b)=>(a.date||'9999').localeCompare(b.date||'9999')})+`<p class="note">Priorize participação autêntica e regras de cada comunidade. As compras atribuídas servem à análise do canal; não são somadas novamente à receita.</p>`+B.taskView(t=>t.productId===current&&t.category==='Conteúdo e distribuição');}
+ function launches(){return header()+B.crud('launches',[field('name','Nome do lançamento','text',{required:true}),related(),area('objective','Objetivo'),field('audience','Público-alvo'),field('date','Data de lançamento','date'),select('type','Tipo',['Beta','Oficial']),select('phase','Fase',['Preparação','Pré-lançamento','Lançamento','Follow-up','Otimização']),area('offer','Oferta'),num('price','Preço (US$)'),field('salesUrl','Página de vendas','url'),field('channels','Canais de divulgação'),field('emailIds','IDs das campanhas de email'),field('contentIds','IDs dos conteúdos'),area('results','Resultados observados')],{title:'Lançamentos',filter:forProduct,defaults:{productId:current,type:'Beta',phase:'Preparação'}})+`<div class="card divider"><h3>Preparação → Pré-lançamento → Lançamento → Follow-up → Otimização</h3><p class="small">A preparação inclui produto, oferta, página, checkout, entrega e materiais. O pré-lançamento desenvolve conteúdo, demonstrações e participação. Lance apenas após revisão; acompanhe dúvidas, compras e feedback, e depois revise oferta, copy e preço.</p><p class="small">Emails e conteúdos ficam vinculados ao mesmo produto. Confira os IDs dos registros para associar um lançamento específico.</p></div>`+B.taskView(t=>t.productId===current&&['Execução do lançamento','Preparação do produto','Avaliação da oferta'].includes(t.category));}
+ function statsFor(id){if(typeof B.finance==='function')return B.finance({productId:id,workstream:'digital',cycle:true});if(typeof B.productStats==='function')return B.productStats(id);return {purchases:0,gross:0,refunds:0,netSales:0,byChannel:{}};}
+ function analytics(){const p=prod();if(!p)return empty();const stats=statsFor(p.id),published=B.state.contents.filter(r=>r.productId===current&&r.status==='published');const measured=B.state.signals.filter(r=>r.productId===current&&r.basis==='measured'&&r.date>='2026-11-05'&&(r.endDate||r.date)<='2026-12-05'&&(r.endDate||r.date)>=r.date);const intervals=[...measured].sort((a,b)=>a.date.localeCompare(b.date));const overlap=intervals.some((r,i)=>i>0&&r.date<=(intervals[i-1].endDate||intervals[i-1].date));const sum=k=>measured.reduce((n,r)=>n+(Number(r[k])||0),0);const visits=sum('visits'),coveredPurchases=B.state.sales.filter(r=>r.workstream==='digital'&&r.productId===current&&r.status==='confirmed'&&intervals.some(period=>r.date>=period.date&&r.date<=(period.endDate||period.date))).length,conversion=!overlap&&visits>0?coveredPurchases/visits*100:null;const progress=B.progress(tasks());return header()+B.summaryCards([['Em desenvolvimento',B.state.products.filter(r=>['idea','validation','development','testing'].includes(r.stage)).length,'Etapas manuais'],['Prontos para lançar',B.state.products.filter(r=>r.stage==='ready').length,'Aprovação manual'],['Lançados',B.state.products.filter(r=>r.stage==='launched').length,'Status registrado'],['Em otimização',B.state.products.filter(r=>r.stage==='optimization').length,'Aguardando melhorias']])+B.summaryCards([['Conclusão do produto',progress.pct+'%',progress.done+'/'+progress.total+' tarefas reais'],['Compras confirmadas',stats.purchases,'Somente registros confirmados'],['Receita bruta',B.money(stats.gross),'Produto selecionado'],['Receita líquida recebida',B.money(stats.netSales??stats.gross-(stats.refunds||0)),'Receita menos reembolsos']])+B.summaryCards([['Conteúdos publicados',published.length,'Registros marcados como publicados'],['Visitas medidas',overlap?'Revisar períodos':visits,'Apenas 05/11 a 05/12; períodos sem sobreposição'],['Conversão',conversion===null?'Sem base':conversion.toFixed(2)+'%','Compras confirmadas nas mesmas datas das visitas medidas'],['Ticket médio',stats.purchases>0?B.money(stats.gross/stats.purchases):'Sem base','Receita bruta / compras confirmadas']])+`<div class="card"><h3>Funil medido · 05/11 a 05/12</h3>${overlap?'<p class="note">Há medições com períodos sobrepostos. Revise os registros; conversão bloqueada para não apresentar uma taxa duplicada.</p>':''}<p>Tráfego ${sum('traffic')} → Interesse ${sum('interest')} → Página ${visits} → Checkout ${sum('checkouts')} → Compra ${stats.purchases}</p><p class="small">Interesse é um registro separado; engajamento não equivale a intenção de compra. A taxa usa somente compras confirmadas nas datas cobertas pelas visitas medidas; não mistura vendas do mês inteiro com uma amostra parcial de visitas. Registros sem datas válidas ou fora do ciclo ficam abaixo para revisão. Informe períodos sem sobreposição. Estimativas ficam nos registros abaixo, mas não entram nos totais medidos.</p></div>`+B.summaryCards([['Impressões',published.reduce((n,r)=>n+(Number(r.impressions)||0),0),'Conteúdo publicado'],['Engajamento',published.reduce((n,r)=>n+(Number(r.engagement)||0),0),'Não significa intenção de compra'],['Assinantes de email',sum('subscribers'),'Novos assinantes no período'],['Cliques de email',sum('emailClicks'),'Medição manual'],['Leads qualificados',sum('qualifiedLeads'),'Medição manual'],['Reembolsos',B.money(stats.refunds||0),'Registros financeiros']])+B.crud('signals',[field('name','Nome da medição','text',{required:true}),related(),field('date','Data inicial do período','date'),field('endDate','Data final do período','date'),select('basis','Base',[['measured','Medido'],['estimate','Estimativa']]),count('traffic','Tráfego'),count('interest','Interessados'),count('visits','Visitas à página'),count('checkouts','Checkouts iniciados'),count('subscribers','Novos assinantes de email'),count('emailClicks','Cliques em email'),count('qualifiedLeads','Leads qualificados'),area('notes','Fonte e observações')],{title:'Medições do funil',filter:forProduct,defaults:{productId:current,basis:'measured'}})+B.crud('leads',[field('name','Nome ou identificador','text',{required:true}),related(),select('kind','Tipo',['Lead do produto','Assinante de email']),field('channel','Canal'),select('status','Situação',['Interessado','Qualificado','Cliente','Sem interesse']),field('consent','Consentimento e origem'),area('notes','Observações')],{title:'Leads e assinantes do produto',filter:forProduct,defaults:{productId:current,kind:'Lead do produto',status:'Interessado'}})+revenueBreakdown();}
+ function revenueBreakdown(){const list=B.state.products.map(p=>[p.name,statsFor(p.id).gross]);return `<div class="card divider"><h3>Receita por produto</h3>${list.map(([name,gross])=>`<p>${B.esc(name)} <strong>${B.money(gross)}</strong></p>`).join('')}<h3>Receita por canal</h3>${Object.entries(statsFor(current).byChannel||{}).map(([channel,amount])=>`<p>${B.esc(channel||'Sem canal')} <strong>${B.money(typeof amount==='number'?amount:amount.gross??amount.collected??0)}</strong></p>`).join('')||'<p class="small">Nenhuma receita atribuída a canal.</p>'}<p class="small">Use os registros de venda e seus canais para atribuição financeira. Conteúdos e métricas de cliques não criam vendas automaticamente.</p></div>`;}
+ const tabs=[['portfolio','Portfólio'],['development','Desenvolvimento e etapas'],['validation','Validação'],['pricing','Oferta e preço'],['copy','Páginas e copy'],['email','Email marketing'],['content','Conteúdo e distribuição'],['launch','Lançamentos'],['analytics','Analytics']];
+ B.register('digital',{label:'Digital Products',tabs,render(sub){if(!B.state.products.some(p=>p.id===current))current=B.state.products[0]?.id||'';const views={portfolio,development,validation:()=>header()+B.taskView(t=>t.productId===current&&['idea','validation'].includes(t.stage)),pricing,copy,email:emails,content:contents,launch:launches,analytics};return (views[sub]||portfolio)();},bind(root,sub){const selector=root.querySelector('#digital-product');if(selector)selector.onchange=e=>{current=e.target.value;B.refresh();};root.querySelectorAll('[data-digital-stage]').forEach(el=>el.onclick=()=>{stageFilter=el.dataset.digitalStage;B.refresh();});if(sub==='pricing'){const recalc=()=>{const a=Number(root.querySelector('#scenario-a')?.value),b=Number(root.querySelector('#scenario-b')?.value),orders=Number(root.querySelector('#scenario-orders')?.value),out=root.querySelector('#scenario-result');if(out)out.textContent=Number.isFinite(a)&&Number.isFinite(b)&&Number.isInteger(orders)&&a>=0&&b>=0&&orders>=0?`Cenário A: ${B.money(a*orders)} · Cenário B: ${B.money(b*orders)} · diferença: ${B.money((b-a)*orders)}. Receita hipotética antes de taxas e reembolsos.`:'Informe preços válidos e um número inteiro de compras.';};root.querySelectorAll('[id^="scenario-"]').forEach(el=>el.addEventListener('input',recalc));recalc();}}});
+ B.productStages=stages;
+})(BOS);
+
+</script>
+<script id="bos-business">
+/* Side Hustles: service operations, lightweight Ads and record-based finance. */
+(function () {
+  'use strict';
+  const B = BOS;
+  const streams = [['digital','Digital Products'],['services','Landing Pages + AI Automation'],['ads','AI Ads / UGC Ads']];
+  const types = [['landing','Landing Page'],['automation','AI Automation'],['other','Outro / não atribuído']];
+  const stages = [['identified','Lead Identified'],['qualified','Lead Qualified'],['contact','First Contact'],['followup','Follow-up'],['interested','Interested'],['discovery','Discovery / Demo'],['proposal','Proposal Sent'],['negotiation','Negotiation'],['won','Won'],['lost','Lost']];
+  const stageLabel = value => stages.find(x=>x[0]===value)?.[1] || value;
+  const cash = (key,label,required=false) => ({key,label,type:'number',min:0,step:0.01,required});
+  const products = () => [['','Não se aplica'],...(B.state.products||[]).map(p=>[p.id,p.name||p.title||p.id])];
+  const match = (record,filter) => (!filter.workstream || record.workstream===filter.workstream) && (!filter.productId || record.productId===filter.productId);
+  const inCycle = (date,filter) => filter.cycle===false || Boolean(date && date>='2026-11-05' && date<='2026-12-05');
+  const number = value => typeof value==='number' && Number.isFinite(value) && value>=0 ? value : 0;
+  const groupAdd = (bucket,key,r) => { const k=key||'Não atribuído'; if(!bucket[k])bucket[k]={collected:0,gross:0,refunds:0,purchases:0}; bucket[k].collected+=number(r.collected);bucket[k].gross+=number(r.amount);bucket[k].refunds+=number(r.refunds);bucket[k].purchases+=r.workstream==='digital'?1:0; };
+
+  B.validateBusinessRecord = function(collection,record) {
+    if(collection==='sales') {
+      if(!['draft','signed','confirmed','cancelled'].includes(record.status))return 'Selecione uma situação válida para a venda.';
+      if(!['digital','services','ads'].includes(record.workstream))return 'Selecione a frente da venda.';
+      if(['amount','collected','refunds'].some(k=>typeof record[k]!=='number'||!Number.isFinite(record[k])||record[k]<0))return 'Informe valor total, caixa recebido e reembolso como números não negativos.';
+      if(record.collected>record.amount)return 'O caixa recebido não pode superar o valor total da venda.';
+      if(record.refunds>record.collected)return 'O reembolso não pode superar o caixa recebido.';
+      if(record.status==='draft'&&record.collected>0)return 'Confirme a venda ou a assinatura do contrato antes de registrar caixa recebido.';
+      if(record.workstream==='digital'&&record.status==='signed')return 'Para produto digital, confirme a compra; contrato assinado é uma situação de serviços.';
+    }
+    if(collection==='prospects'&&record.stage==='lost'&&!String(record.lostReason||'').trim())return 'Registre o motivo de perda desta oportunidade.';
+    if(collection==='subscriptions'&&(typeof record.monthlyAmount!=='number'||!Number.isFinite(record.monthlyAmount)||record.monthlyAmount<0))return 'Informe uma mensalidade válida.';
+    if(collection==='expenses'&&(typeof record.amount!=='number'||!Number.isFinite(record.amount)||record.amount<0))return 'Informe uma despesa válida.';
+    return null;
+  };
+
+  // This helper never promotes a proposal, an estimated value or a setup fee to MRR.
+  B.finance = function (filter={}) {
+    const eligible=(B.state.sales||[]).filter(r=>['digital','services','ads'].includes(r.workstream)&&match(r,filter)&&inCycle(r.date,filter)&&(r.workstream==='digital'?r.status==='confirmed':['signed','confirmed'].includes(r.status)));
+    const expenses=(B.state.expenses||[]).filter(r=>match(r,filter)&&inCycle(r.date,filter));
+    const subscriptions=(B.state.subscriptions||[]).filter(r=>match(r,filter)&&r.status==='active'&&(!r.startDate||r.startDate<=B.today()));
+    const prospects=(B.state.prospects||[]).filter(r=>(!filter.workstream||filter.workstream==='services')&&!filter.productId&&!['won','lost'].includes(r.stage));
+    const result={collected:0,gross:0,contracted:0,pending:0,mrr:0,refunds:0,netSales:0,expenses:0,directCosts:0,grossProfitEstimate:0,profitEstimate:0,pipeline:0,purchases:0,averageOrderValue:null,byProduct:Object.create(null),byChannel:Object.create(null),byWorkstream:{digital:0,services:0,ads:0},landingRevenue:0,automationRevenue:0,serviceSetupRevenue:0,recurringCollected:0,coverageComplete:false,recordCount:0,expenseCount:expenses.length,invalidRecords:[]};
+    for(const r of eligible){
+      // Invalid imported records are excluded rather than clamped into fabricated revenue.
+      if(!Number.isFinite(r.amount)||!Number.isFinite(r.collected)||!Number.isFinite(r.refunds)||r.amount<0||r.collected<0||r.refunds<0||r.collected>r.amount||r.refunds>r.collected){result.invalidRecords.push(r.id);continue;}
+      result.recordCount++;
+      result.gross+=r.amount;result.contracted+=r.amount;result.collected+=r.collected;result.pending+=r.amount-r.collected;result.refunds+=r.refunds;
+      if(r.workstream==='digital')result.purchases++;
+      if(result.byWorkstream[r.workstream]!==undefined)result.byWorkstream[r.workstream]+=r.collected;
+      if(r.workstream==='services'&&r.serviceType==='landing')result.landingRevenue+=r.collected;
+      if(r.workstream==='services'&&r.serviceType==='automation')result.automationRevenue+=r.collected;
+      if(r.workstream==='services'&&r.revenueType!=='recurring')result.serviceSetupRevenue+=r.collected;
+      if(r.revenueType==='recurring')result.recurringCollected+=r.collected;
+      groupAdd(result.byProduct,r.productId,r);groupAdd(result.byChannel,r.channel,r);
+    }
+    result.expenses=expenses.reduce((sum,r)=>sum+number(r.amount),0);
+    result.directCosts=expenses.filter(r=>r.category==='delivery').reduce((sum,r)=>sum+number(r.amount),0);
+    result.mrr=subscriptions.reduce((sum,r)=>sum+number(r.monthlyAmount),0);
+    result.pipeline=prospects.reduce((sum,r)=>sum+number(r.proposalValue),0);
+    result.netSales=result.collected-result.refunds;
+    result.grossProfitEstimate=result.netSales-result.directCosts;
+    result.profitEstimate=result.netSales-result.expenses;
+    const digitalSales=eligible.filter(r=>r.workstream==='digital'&&!result.invalidRecords.includes(r.id));
+    result.averageOrderValue=digitalSales.length?digitalSales.reduce((sum,r)=>sum+r.amount,0)/digitalSales.length:null;
+    result.grossCollected=result.collected;
+    return result;
+  };
+
+  B.businessSeeds = {
+    offers:[
+      {id:'offer-landing-launch',name:'Landing Page Launch',serviceType:'landing',setup:750,monthly:79,monthlyOptional:true,startingAt:false,status:'active',scope:'Landing page responsiva personalizada; copywriting em inglês; até sete seções; formulário e CTAs; SEO básico; configuração de domínio e deploy; duas rodadas de revisão.',notes:'Manutenção mensal opcional. Preço não muda automaticamente.'},
+      {id:'offer-lead-generation',name:'Lead Generation System',serviceType:'landing',setup:1250,monthly:297,monthlyOptional:false,startingAt:false,status:'active',scope:'Landing page; captura de leads; integração com CRM; follow-up por email automatizado, até três mensagens; integração de agendamento ou pedido de orçamento; relatório mensal de desempenho.',notes:'Definir acessos e consentimento antes de ativar mensagens.'},
+      {id:'offer-custom-automation',name:'Custom AI Automation',serviceType:'automation',setup:1500,monthly:397,monthlyOptional:false,startingAt:true,status:'active',scope:'Automação personalizada. Escopo e orçamento definidos caso a caso.',notes:'Valores a partir de US$ 1.500 de setup e US$ 397/mês. Não presumir contrato.'}
+    ]
+  };
+
+  const offerFields = [
+    {key:'name',label:'Nome da oferta',type:'text',required:true},
+    {key:'serviceType',label:'Serviço',type:'select',options:types},cash('setup','Setup (US$)',true),cash('monthly','Mensalidade (US$)'),
+    {key:'monthlyOptional',label:'Mensalidade opcional',type:'checkbox'}, {key:'startingAt',label:'Valores a partir de',type:'checkbox'},
+    {key:'status',label:'Status',type:'select',options:[['active','Ativa'],['review','Em revisão'],['paused','Pausada']]},
+    {key:'scope',label:'Escopo e revisões incluídas',type:'textarea'}, {key:'notes',label:'Notas comerciais',type:'textarea'}
+  ];
+  const prospectFields = () => [
+    {key:'company',label:'Empresa',type:'text',required:true},{key:'contact',label:'Contato profissional',type:'text'},
+    {key:'website',label:'Site',type:'url'},{key:'industry',label:'Setor / indústria',type:'text',required:true},
+    {key:'location',label:'Localização / país',type:'text',required:true},{key:'serviceType',label:'Serviço proposto',type:'select',options:types},
+    {key:'stage',label:'Etapa do CRM',type:'select',options:stages,required:true},
+    {key:'qualification',label:'Qualificação',type:'select',options:[['unknown','Não avaliado'],['fit','Qualificado'],['review','Precisa revisar'],['unfit','Fora do perfil']]},
+    {key:'problem',label:'Problema observado e evidência',type:'textarea'},
+    {key:'qualificationNotes',label:'Critérios de qualificação / restrições',type:'textarea'},
+    {key:'lastContact',label:'Último contato',type:'date'},{key:'followup',label:'Próximo follow-up',type:'date'},
+    cash('proposalValue','Valor da proposta (US$)'),
+    {key:'offerId',label:'Oferta',type:'select',options:[['','Não definida'],...(B.state.offers||[]).map(o=>[o.id,o.name])]},
+    {key:'lostReason',label:'Motivo de perda',type:'textarea'}, {key:'notes',label:'Notas de comunicação / histórico',type:'textarea'}
+  ];
+  let crmFilter={industry:'',location:'',stage:'',qualification:''};
+  const crmMatches=r=>Object.entries(crmFilter).every(([key,v])=>!v||String(r[key]||'').toLocaleLowerCase('pt-BR').includes(v.toLocaleLowerCase('pt-BR')));
+  const crmFilters=()=>`<div class="bos-filterbar business-filters"><label>Indústria<input data-crm-filter="industry" value="${B.esc(crmFilter.industry)}" placeholder="HVAC, roofing, plumbing…"></label><label>Localização<input data-crm-filter="location" value="${B.esc(crmFilter.location)}" placeholder="Cidade, estado ou país"></label><label>Etapa<select data-crm-filter="stage"><option value="">Todas</option>${stages.map(([v,l])=>`<option value="${v}" ${crmFilter.stage===v?'selected':''}>${B.esc(l)}</option>`).join('')}</select></label><label>Qualificação<select data-crm-filter="qualification"><option value="">Todas</option>${[['unknown','Não avaliado'],['fit','Qualificado'],['review','Precisa revisar'],['unfit','Fora do perfil']].map(([v,l])=>`<option value="${v}" ${crmFilter.qualification===v?'selected':''}>${l}</option>`).join('')}</select></label></div>`;
+  const serviceOverview=()=>{
+    const f=B.finance({workstream:'services'}),prospects=B.state.prospects||[],open=prospects.filter(p=>!['won','lost'].includes(p.stage)),due=open.filter(p=>p.followup&&p.followup<=B.today());
+    return `<div class="bos-note">Serviços representam 40% do esforço: aproximadamente 80% Landing Pages e 20% AI Automation. Reserve 3–4 sessões focadas por semana, de 45–60 minutos. Prioridade comercial: HVAC, roofing e plumbing nos EUA; mantenha setores e qualificações já registrados.</div>${B.summaryCards([['Caixa de serviços',B.money(f.collected),'Somente contratos assinados ou confirmados.'],['Pipeline',B.money(f.pipeline),'Oportunidades abertas; não é receita.'],['Prospects ativos',String(open.length),'CRM separado dos leads de produtos.'],['Follow-ups vencidos / hoje',String(due.length),'Use o CRM para registrar o próximo contato.']])}<div class="bos-card"><h3>Funil de serviços</h3><div class="business-stage-grid">${stages.map(([value,label])=>`<div><span>${B.esc(label)}</span><strong>${prospects.filter(p=>p.stage===value).length}</strong></div>`).join('')}</div></div><div class="bos-card"><h3>Entrega e foco</h3><p>Vender um resultado com escopo e critério de aceite claros. Propostas não assinadas permanecem no pipeline. Uma oportunidade ganha só entra no financeiro quando você registra o contrato e o recebimento.</p></div>${B.taskView(t=>t.workstream==='services'&&t.cycle!=='legacy')}`;
+  };
+  B.register('services',{
+    label:'Serviços',tabs:[['overview','Visão geral'],['offers','Ofertas e preços'],['crm','Pesquisa e CRM'],['landing','Landing Pages'],['automation','AI Automation'],['delivery','Entrega aos clientes']],
+    render(sub){
+      if(sub==='offers')return `<div class="bos-note">Valores editáveis. Alterar uma oferta não altera contratos existentes nem ativa cobrança. A mensalidade de manutenção do Landing Page Launch é opcional.</div>${B.crud('offers',offerFields,{title:'Ofertas de serviços',defaults:{serviceType:'landing',status:'active',setup:0,monthly:0,monthlyOptional:false,startingAt:false}})}`;
+      if(sub==='crm')return `${crmFilters()}<div class="bos-note">Qualifique pelo problema observado, aderência ao serviço e localização. Registre o consentimento ou opt-out nas notas. Leads de produtos digitais ficam no módulo Digital Products.</div>${B.crud('prospects',prospectFields(),{title:'Prospects e oportunidades',filter:crmMatches,defaults:{stage:'identified',qualification:'unknown',serviceType:'landing',proposalValue:0,workstream:'services'}})}`;
+      if(sub==='landing')return `<div class="bos-note">Landing Pages: 80% do bloco de serviços. Crie a base reutilizável, a demo HVAC e só personalize depois de delimitar escopo.</div>${B.taskView(t=>t.workstream==='services'&&t.cycle!=='legacy'&&(!t.serviceType||t.serviceType==='landing'))}`;
+      if(sub==='automation')return `<div class="bos-note">AI Automation: 20% do bloco de serviços. Priorize captura, integração e follow-up necessários ao resultado vendido.</div>${B.taskView(t=>t.workstream==='services'&&t.cycle!=='legacy'&&(t.serviceType==='automation'||/autom|follow-up|crm/i.test(t.title+' '+t.category)))}`;
+      if(sub==='delivery')return B.taskView(t=>t.workstream==='services'&&t.cycle!=='legacy'&&(/entrega|onboarding|delivery|cliente|contrato/i.test(t.category+' '+t.title)));
+      return serviceOverview();
+    },
+    bind(root,sub){if(sub==='crm')root.querySelectorAll('[data-crm-filter]').forEach(input=>input.addEventListener('change',()=>{crmFilter[input.dataset.crmFilter]=input.value;B.refresh();}));}
+  });
+
+  const saleFields=()=>[
+    {key:'name',label:'Venda / contrato',type:'text',required:true},{key:'workstream',label:'Frente',type:'select',options:streams,required:true},
+    {key:'serviceType',label:'Tipo de serviço (se aplicável)',type:'select',options:types},{key:'productId',label:'Produto',type:'select',options:products()},
+    {key:'prospectId',label:'Prospect de serviço (se aplicável)',type:'select',options:[['','Não se aplica'],...(B.state.prospects||[]).map(p=>[p.id,p.company||p.name||p.id])]},
+    {key:'channel',label:'Canal de aquisição',type:'text'},{key:'date',label:'Data da venda / assinatura',type:'date',required:true},
+    {key:'status',label:'Situação',type:'select',options:[['draft','Rascunho / proposta não assinada'],['signed','Contrato assinado'],['confirmed','Compra / venda confirmada'],['cancelled','Cancelada']],required:true},
+    {key:'revenueType',label:'Natureza do recebimento',type:'select',options:[['setup','Setup / venda avulsa'],['recurring','Pagamento de mensalidade']]},
+    cash('amount','Valor total da venda / contrato (US$)',true),cash('collected','Caixa efetivamente recebido (US$)',true),cash('refunds','Reembolso efetivamente pago (US$)',true),
+    {key:'notes',label:'Comprovante, escopo e notas',type:'textarea'}
+  ];
+  const expenseFields=()=>[
+    {key:'name',label:'Despesa',type:'text',required:true},{key:'workstream',label:'Frente',type:'select',options:[['business','Negócio / compartilhado'],...streams]},
+    {key:'productId',label:'Produto (se atribuível)',type:'select',options:products()},{key:'date',label:'Data do pagamento',type:'date',required:true},cash('amount','Valor pago (US$)',true),
+    {key:'category',label:'Categoria',type:'select',options:[['fees','Taxas de pagamento'],['tools','Ferramentas'],['delivery','Entrega / produção'],['acquisition','Aquisição / anúncios'],['other','Outras despesas']]},
+    {key:'notes',label:'Comprovante e notas',type:'textarea'}
+  ];
+  const subscriptionFields=()=>[
+    {key:'name',label:'Cliente / assinatura',type:'text',required:true},{key:'workstream',label:'Frente',type:'select',options:streams},
+    {key:'serviceType',label:'Serviço',type:'select',options:types},{key:'productId',label:'Produto (se aplicável)',type:'select',options:products()},
+    cash('monthlyAmount','Receita recorrente mensal contratada (US$)',true),{key:'startDate',label:'Início da assinatura',type:'date',required:true},
+    {key:'status',label:'Situação',type:'select',options:[['active','Ativa'],['paused','Pausada'],['cancelled','Cancelada']]},{key:'notes',label:'Condições e notas',type:'textarea'}
+  ];
+  const namedBreakdown=(data,title,product=false)=>`<div class="bos-card"><h3>${B.esc(title)}</h3>${Object.keys(data).length?Object.entries(data).map(([key,r])=>`<div class="business-split"><span>${B.esc(product?(B.state.products.find(p=>p.id===key)?.name||key):key)}</span><strong>${B.money(r.collected)}</strong><small>${r.purchases} compra(s) · ${B.money(r.refunds)} em reembolsos</small></div>`).join(''):'<p class="bos-muted">Nenhum recebimento confirmado atribuído neste ciclo.</p>'}</div>`;
+  B.register('finance',{
+    label:'Financeiro',tabs:[['overview','Visão financeira'],['sales','Vendas e contratos'],['expenses','Despesas'],['recurring','Receita recorrente']],
+    render(sub){
+      if(sub==='sales')return `<div class="bos-note">Registre um contrato/venda uma vez e atualize seu caixa recebido. Um rascunho não é receita. Produto digital só entra nos indicadores após confirmação da compra. Recebimentos de mensalidades são registrados aqui para o caixa; o MRR é mantido separadamente em Receita recorrente.</div>${B.crud('sales',saleFields(),{title:'Vendas e contratos',defaults:{workstream:'digital',serviceType:'other',date:B.today(),status:'draft',revenueType:'setup',amount:0,collected:0,refunds:0}})}`;
+      if(sub==='expenses')return `<div class="bos-note">Use valores pagos em US$. Não repita reembolsos de vendas como despesas. Custos compartilhados ficam em Negócio / compartilhado, sem inventar uma distribuição entre produtos.</div>${B.crud('expenses',expenseFields(),{title:'Despesas operacionais',defaults:{workstream:'business',date:B.today(),category:'tools',amount:0}})}`;
+      if(sub==='recurring')return `<div class="bos-note">MRR é a soma mensal das assinaturas ativas, não o valor de setups nem a receita avulsa. Cancelar ou pausar uma assinatura altera o MRR; não apaga recebimentos anteriores.</div>${B.crud('subscriptions',subscriptionFields(),{title:'Assinaturas e gestão mensal',defaults:{workstream:'services',serviceType:'landing',startDate:B.today(),monthlyAmount:0,status:'active'}})}`;
+      const f=B.finance();
+      return `<div class="bos-note">Ciclo de 5 de novembro a 5 de dezembro de 2026. A meta de US$ 10.000 é ambiciosa e não garantida. O histórico do painel anterior permanece separado, sem ser somado novamente.</div>${B.summaryCards([['Caixa recebido',B.money(f.collected),'Dinheiro efetivamente recebido; antes dos reembolsos.'],['Receita contratada',B.money(f.contracted),'Vendas confirmadas e contratos assinados.'],['Pagamentos pendentes',B.money(f.pending),'Valor contratado ainda não recebido.'],['MRR ativo',B.money(f.mrr),'Posição atual das assinaturas; não somar ao caixa.'],['Reembolsos',B.money(f.refunds),'Valores efetivamente devolvidos.'],['Receita líquida recebida',B.money(f.netSales),'Caixa menos reembolsos.'],['Despesas registradas',B.money(f.expenses),'Somente custos informados.'],['Lucro bruto estimado',B.money(f.grossProfitEstimate),'Parcial: receita líquida menos produção/entrega registrada.'],['Resultado estimado',B.money(f.profitEstimate),'Parcial: antes de custos ausentes, impostos e remuneração própria.'],['Pipeline de serviços',B.money(f.pipeline),'Propostas abertas; nunca é receita.']])}<div class="bos-card"><h3>Recebimentos por frente</h3>${B.summaryCards([['Digital Products',B.money(f.byWorkstream.digital),'Compras confirmadas.'],['Landing Pages',B.money(f.landingRevenue),'Contratos assinados / confirmados.'],['AI Automation',B.money(f.automationRevenue),'Contratos assinados / confirmados.'],['AI Ads / UGC Ads',B.money(f.byWorkstream.ads),'Recebimentos confirmados.'],['Setup de serviços',B.money(f.serviceSetupRevenue),'Parte do caixa de serviços; não somar novamente.'],['Mensalidades recebidas',B.money(f.recurringCollected),'Parte do caixa total; não confundir com MRR.']])}</div><div class="business-two">${namedBreakdown(f.byProduct,'Caixa por produto',true)}${namedBreakdown(f.byChannel,'Caixa por canal')}</div>${f.invalidRecords.length?'<div class="bos-note">Existem registros financeiros inconsistentes. Eles foram excluídos dos totais: revise valores recebidos, valor total e reembolsos.</div>':''}`;
+    }
+  });
+
+  const adFields=[
+    {key:'name',label:'Projeto / criativo',type:'text',required:true},{key:'hypothesis',label:'Hipótese do teste',type:'textarea'},
+    {key:'channel',label:'Canal',type:'text'},{key:'date',label:'Data do teste',type:'date'},
+    {key:'status',label:'Situação',type:'select',options:[['draft','Rascunho'],['ready','Pronto'],['testing','Em teste'],['review','Em análise'],['done','Concluído']]},
+    cash('budget','Limite de gasto planejado (US$)'),cash('spend','Gasto medido (US$)'),
+    {key:'impressions',label:'Impressões medidas',type:'number',min:0,step:1},{key:'clicks',label:'Cliques medidos',type:'number',min:0,step:1},
+    {key:'leads',label:'Leads atribuídos',type:'number',min:0,step:1},{key:'purchases',label:'Compras atribuídas',type:'number',min:0,step:1},
+    {key:'url',label:'Link do criativo',type:'url'},{key:'notes',label:'Resultados e decisão do próximo teste',type:'textarea'}
+  ];
+  B.register('ads',{
+    label:'AI Ads',tabs:[['tasks','Projetos e tarefas'],['performance','Criativos e desempenho']],
+    render(sub){if(sub!=='performance')return `<div class="bos-note">Frente independente de 10% do esforço. Mantenha poucos testes, hipótese explícita e limite de gasto. Não ampliaremos esta área além de tarefas e desempenho.</div>${B.taskView(t=>t.workstream==='ads'&&t.cycle!=='legacy')}`;const ads=B.state.ads||[],measured=ads.filter(a=>typeof a.spend==='number');return `${B.summaryCards([['Criativos registrados',String(ads.length),'Nenhum resultado é presumido.'],['Gasto de testes informado',B.money(measured.reduce((n,a)=>n+number(a.spend),0)),'Controle de teste; registre despesas no Financeiro, sem somar duas vezes.']])}${B.crud('ads',adFields,{title:'Criativos e resultados',defaults:{workstream:'ads',status:'draft',date:B.today()}})}`;}
+  });
+}());
+
+</script>
+<script id="bos-operations">
+(function(B){
+ 'use strict';
+ const workOptions=['digital','services','ads','business'].map(k=>[k,B.labels[k]]);
+ const task=(id,title,workstream,due,category,extra={})=>({id:'cycle-'+id,title,workstream,productId:workstream==='digital'?'product-a':'',due,category,priority:'high',status:'todo',estimate:45,actual:null,dependencies:[],notes:'Entrega do ciclo 5 nov – 5 dez. Ajuste escopo e prazo à sua capacidade.',cycle:'current',essential:true,...extra});
+ B.cycleSeeds={tasks:[
+
+ task('linkedin-publish','Publicar o primeiro conteúdo no LinkedIn','digital','2026-11-12','Distribuição'),
+ task('x-publish','Publicar conteúdo relevante no X após priorizar o primeiro canal','digital','2026-11-16','Distribuição',{essential:false,priority:'medium'}),
+ task('reddit-participate','Participar de comunidades selecionadas no Reddit respeitando as regras','digital','2026-11-17','Distribuição',{essential:false,priority:'medium'}),
+ task('interest-feedback','Coletar dúvidas e feedback dos interessados no produto','digital','2026-11-18','Validação'),
+ task('copy-improve','Melhorar a copy da página com os dados iniciais','digital','2026-11-20','Otimização'),
+ task('demo-publish','Publicar uma demonstração do produto','digital','2026-11-24','Distribuição'),
+ task('service-followup-close','Retomar prospects de serviços interessados e negociar próximos passos','services','2026-11-30','Relacionamento'),
+ task('product-update','Atualizar o produto com o feedback priorizado','digital','2026-12-03','Otimização'),
+task('organize','Organizar e validar o dashboard Side Hustles','business','2026-11-05','Organização'),
+ task('template','Criar o template base de Landing Pages','services','2026-11-09','Produção',{serviceType:'landing'}),
+ task('hvac','Construir a primeira demo HVAC','services','2026-11-10','Produção',{serviceType:'landing',dependencies:['cycle-template']}),
+ task('proposal','Preparar a proposta comercial de serviços','services','2026-11-11','Oferta'),
+ task('research-15','Pesquisar 15 negócios de HVAC, roofing e plumbing','services','2026-11-13','Prospecção'),
+ task('qualify-10','Qualificar pelo menos 10 prospects','services','2026-11-14','Prospecção',{dependencies:['cycle-research-15']}),
+ task('outreach-10','Enviar 10 mensagens personalizadas','services','2026-11-16','Prospecção',{dependencies:['cycle-qualify-10']}),
+ task('followup-existing','Fazer follow-up com os prospects existentes','services','2026-11-18','Relacionamento'),
+ task('research-more','Pesquisar 15 negócios adicionais','services','2026-11-20','Prospecção'),
+ task('outreach-more','Enviar mais 10 mensagens personalizadas','services','2026-11-23','Prospecção',{dependencies:['cycle-research-more']}),
+ task('demos','Apresentar demos e enviar propostas','services','2026-11-25','Vendas'),
+ task('objections','Documentar objeções e feedback de preço','services','2026-11-25','Aprendizado'),
+ task('close','Tentar fechar os primeiros projetos com escopo assinado','services','2026-12-01','Vendas'),
+ task('deliver','Iniciar a entrega dos projetos assinados','services','2026-12-04','Entrega',{notes:'Se não houver contrato, mantenha aguardando. Não registre projeto fictício.'}),
+ task('cash','Registrar caixa recebido e recorrência contratada','services','2026-12-05','Financeiro'),
+ task('automation','Definir uma automação mínima de captura e follow-up','services','2026-11-11','Escopo',{serviceType:'automation',estimate:45}),
+ task('conversion','Revisar dados iniciais de conversão do produto','digital','2026-11-19','Otimização'),
+ task('headline','Testar uma hipótese de título com evidências','digital','2026-11-21','Experimentos'),
+ task('beta-feedback','Revisar feedback beta e priorizar melhorias','digital','2026-11-25','Otimização'),
+ task('channel-review','Analisar canais de divulgação e vendas beta','digital','2026-11-28','Análise'),
+ task('pricing-review','Revisar preço e oferta com base nos dados','digital','2026-12-02','Oferta'),
+ task('next-launch','Preparar o próximo ciclo de lançamento','digital','2026-12-04','Lançamento'),
+ task('ads-test','Definir um teste pequeno de criativo e seu limite de gasto','ads','2026-11-22','Criativos',{essential:false,priority:'medium',estimate:45}),
+ task('ads-review','Registrar o desempenho real do teste de anúncio','ads','2026-11-29','Análise',{essential:false,priority:'medium'}),
+ task('all-review','Comparar as três frentes e revisar a meta de US$10.000','business','2026-12-05','Revisão'),
+ task('next-cycle','Preparar o próximo ciclo de execução','business','2026-12-05','Planejamento')
+ ]};
+ const periods=[['2026-11-05','2026-11-11','Semana 1 · Organização e prontidão'],['2026-11-12','2026-11-18','Semana 2 · Validação e distribuição'],['2026-11-19','2026-11-25','Semana 3 · Validação de vendas'],['2026-11-26','2026-12-05','Semana 4 · Fechamento e otimização']];
+ let selectedDate=B.today()<'2026-11-05'?'2026-11-05':B.today()>'2026-12-05'?'2026-12-05':B.today(),history=false;
+ const current=()=>B.state.tasks.filter(t=>t.cycle!=='legacy');
+ function priorities(){const available=current().filter(t=>!['completed','cancelled'].includes(t.status));const rank={critical:0,high:1,medium:2,low:3};return available.sort((a,b)=>(a.status==='waiting')-(b.status==='waiting')||(rank[a.priority]-rank[b.priority])||String(a.due||'9999').localeCompare(b.due||'9999'));}
+ function overview(){const f=B.finance(),p=B.progress(current()),next=priorities().filter(t=>!t.dependencies.some(id=>B.state.tasks.find(x=>x.id===id)?.status!=='completed')).slice(0,3);const open=B.state.prospects.filter(p=>!['won','lost'].includes(p.stage));const late=open.filter(p=>p.followup&&p.followup<B.today());return `<div class="bos-section-heading"><div><span class="eyebrow">5 NOV — 5 DEZ 2026</span><h2>Uma operação. Três frentes.</h2><p class="muted">Digital Products 50% · Landing Pages + AI Automation 40% · AI Ads 10%.</p></div><button data-module="operations" data-sub-target="tasks">Abrir Master Checklist</button></div><article class="card bos-target"><span class="stat-label">Receita bruta recebida · meta ambiciosa do ciclo</span><strong>${B.money(f.collected)} <span>/ US$ 10.000</span></strong><div class="bar"><span style="width:${Math.min(100,f.collected/10000*100)}%"></span></div><p class="small">${(f.collected/100).toFixed(1)}% da meta · não é garantia de resultado. Contratos, pipeline e MRR não são somados ao caixa.</p></article><h3 class="divider">Prioridades de hoje</h3><div class="grid three">${next.map(t=>`<article class="card"><span class="small">${B.esc(B.labels[t.workstream])} · ${B.esc(t.due||'Sem prazo')}</span><h3>${B.esc(t.title)}</h3><p class="small">${t.estimate||'—'} min estimados · ${B.esc(B.labels[t.priority])}</p><button data-open-task="${B.esc(t.id)}">Abrir tarefa</button></article>`).join('')||'<div class="empty-state">Nenhuma próxima tarefa disponível. Revise dependências ou adicione uma tarefa.</div>'}</div>${B.summaryCards([['Receita contratada',B.money(f.contracted),'Somente vendas confirmadas / contratos assinados'],['Pagamento pendente',B.money(f.pending),'Ainda não é dinheiro recebido'],['MRR atual',B.money(f.mrr),'Assinaturas ativas'],['Tarefas concluídas',p.done+'/'+p.total,'Uma fonte compartilhada'],['Prospects ativos',open.length,'CRM de serviços'],['Propostas abertas',open.filter(p=>['proposal','negotiation'].includes(p.stage)).length,'Oportunidades, não receita'],['Lançamentos registrados',B.state.launches.length,'Não presume lançamento realizado'],['Follow-ups atrasados',late.length,'Abrir Serviços → CRM']])}<div class="grid two divider"><article class="card"><h3>Próximos prazos</h3>${priorities().slice(0,5).map(t=>`<p class="small"><strong>${B.esc(t.due||'Sem prazo')}</strong> · ${B.esc(t.title)}</p>`).join('')}</article><article class="card"><h3>Aprovações e atividades de lançamento</h3>${B.state.products.filter(p=>['needs-review','waiting'].includes(p.status)).map(p=>`<p>${B.esc(p.name)} · revisão pendente</p>`).join('')||'<p class="small">Nenhum produto aguardando revisão.</p>'}<p class="small">${B.state.launches.filter(l=>!['completed','cancelled'].includes(l.status)).length} lançamento(s) em acompanhamento.</p><p class="small">Carga de serviços: 3–4 sessões semanais de 45–60 min. Em produtos, avance a próxima tarefa crítica; não tente ativar todos os canais juntos.</p></article></div>`;}
+ B.register('overview',{label:'Visão Geral',tabs:[['dashboard','Dashboard'],['priorities','Prioridades de hoje'],['revenue','Receita']],render(sub){if(sub==='revenue')return B.modules.finance.render('overview');if(sub==='priorities')return '<h2>Prioridades de hoje</h2>'+B.taskView(t=>priorities().slice(0,3).some(n=>n.id===t.id));return overview();}});
+ function filters(){const f=B.filters;const field=(id,label,opts)=>`<label>${label}<select data-task-filter="${id}"><option value="">Todos</option>${opts.map(([v,l])=>`<option value="${B.esc(v)}" ${f[id]===v?'selected':''}>${B.esc(l)}</option>`).join('')}</select></label>`;return `<div class="bos-filterbar">${field('workstream','Frente',workOptions)}${field('productId','Produto / serviço',[...B.state.products,...B.state.offers].map(r=>[r.id,r.name]))}${field('priority','Prioridade',['critical','high','medium','low'].map(k=>[k,B.labels[k]]))}${field('status','Status',['backlog','todo','progress','waiting','completed','cancelled'].map(k=>[k,B.labels[k]]))}${field('deadline','Prazo',[['overdue','Atrasadas'],['today','Hoje'],['upcoming','Futuras'],['none','Sem prazo']])}${field('category','Categoria',[...new Set(B.state.tasks.map(t=>t.category).filter(Boolean))].map(c=>[c,c]))}<label>Buscar<input type="search" data-task-filter="search" value="${B.esc(f.search)}"></label></div>`;}
+ function matches(t){const f=B.filters;if(!history&&t.cycle==='legacy')return false;if(history&&t.cycle!=='legacy')return false;for(const k of ['workstream','productId','priority','status','category'])if(f[k]&&t[k]!==f[k])return false;if(f.search&&!t.title.toLowerCase().includes(f.search.toLowerCase()))return false;if(f.deadline==='overdue'&&(!t.due||t.due>=B.today()||['completed','cancelled'].includes(t.status)))return false;if(f.deadline==='today'&&t.due!==B.today())return false;if(f.deadline==='upcoming'&&(!t.due||t.due<=B.today()))return false;if(f.deadline==='none'&&t.due)return false;return true;}
+ function schedule(){const period=periods.find(p=>selectedDate>=p[0]&&selectedDate<=p[1]);const dates=Array.from({length:31},(_,i)=>new Date(Date.UTC(2026,10,5+i)).toISOString().slice(0,10));const due=current().filter(t=>t.due===selectedDate);return `<h2>Plano de execução · 5 nov — 5 dez</h2><p class="muted">31 datas incluindo início e fim. Dias sem entrega fixa são espaço de execução, revisão e descanso.</p><div class="bos-week-grid">${periods.map(([start,end,title])=>`<button data-plan-date="${start}" class="${selectedDate>=start&&selectedDate<=end?'active':''}">${title}<small>${start.slice(8)}/${start.slice(5,7)} — ${end.slice(8)}/${end.slice(5,7)}</small></button>`).join('')}</div><div class="schedule-workspace"><div class="card"><h3>Escolha uma data</h3><div class="calendar">${dates.map(date=>`<button class="day ${date===selectedDate?'selected':''}" data-plan-date="${date}" aria-pressed="${date===selectedDate}">${date.slice(8)}<span>${date.slice(5,7)==='11'?'NOV':'DEZ'}</span>${current().some(t=>t.due===date)?'<span>•</span>':''}</button>`).join('')}</div></div><aside class="card daily-guide"><span class="eyebrow">${B.esc(period?.[2])}</span><h3>${selectedDate.slice(8)}/${selectedDate.slice(5,7)}/2026</h3><p class="small">${due.length} tarefa(s) com prazo nesta data. Se a carga exceder sua disponibilidade, edite o prazo e priorize a entrega essencial.</p>${due.length?B.taskView(t=>t.cycle!=='legacy'&&t.due===selectedDate):'<p>Nenhuma entrega fixa. Continue a próxima tarefa crítica disponível ou reserve o período para revisão e recuperação.</p><button data-module="overview">Ver prioridades</button>'}</aside></div>`;}
+ function data(){return `<h2>Dados e histórico preservado</h2><div class="note">O sistema mantém o plano anterior e seu JSON original. Importações mesclam IDs novos; conflitos preservam o registro local e guardam a versão recebida abaixo. Nenhum dado é sincronizado automaticamente entre dispositivos.</div><div class="toolbar"><button data-action="export" class="primary">Exportar backup completo</button><button data-action="import">Importar JSON e mesclar</button><button data-action="raw">Exportar dados salvos originais</button></div><h3>Histórico do plano anterior</h3>${B.state.legacy.map(snapshot=>`<details class="card divider"><summary>${B.esc(snapshot.label||snapshot.id)}</summary><pre>${B.esc(JSON.stringify(snapshot.data,null,2))}</pre></details>`).join('')||'<p class="small">Nenhum histórico encontrado neste navegador. Importe seu backup anterior se usava outro dispositivo ou o arquivo local.</p>'}<h3 class="divider">Conflitos preservados</h3><p class="small">${B.state.importConflicts.length} registro(s). Para adotar um valor, edite o registro local; o material recebido permanece no backup.</p><details><summary>Inspecionar versões recebidas</summary><pre>${B.esc(JSON.stringify(B.state.importConflicts,null,2))}</pre></details><p class="small divider">Backups de segurança locais: ${(()=>{try{return Object.keys(localStorage).filter(k=>k.startsWith(B.KEY+'-backup-')).length;}catch(e){return 'indisponível';}})()}. Não limpe o navegador antes de exportar.</p>`;}
+ B.register('operations',{label:'Operações',tabs:[['tasks','Master Checklist'],['plan','Plano de execução'],['review','Revisão semanal'],['data','Dados e backup']],render(sub){if(sub==='plan')return schedule();if(sub==='data')return data();if(sub==='review')return '<h2>Revisão semanal</h2><p class="muted">Revise dados reais, bloqueios, capacidade e próxima ação. Melhorias opcionais não devem impedir o lançamento essencial.</p>'+B.crud('reviews',[{key:'title',label:'Revisão',required:true},{key:'date',label:'Data',type:'date'},{key:'wins',label:'Entregas e evidências',type:'textarea'},{key:'blocks',label:'Bloqueios',type:'textarea'},{key:'decisions',label:'Decisões e justificativa',type:'textarea'},{key:'capacity',label:'Capacidade disponível na próxima semana (horas)',type:'number'},{key:'next',label:'Próxima ação importante',type:'textarea'}],{title:'Revisões',defaults:{date:B.today()}});return `<h2>Master Checklist</h2><p class="muted">Cada tarefa existe uma vez. Produto, serviço e plano consultam este mesmo registro.</p><div class="toolbar"><button id="show-current" class="${!history?'active':''}">Ciclo atual</button><button id="show-legacy" class="${history?'active':''}">Tarefas anteriores</button></div>${filters()}${B.taskView(matches)}`;},bind(root,sub){if(sub==='tasks'||!sub){root.querySelector('#show-current').onclick=()=>{history=false;B.refresh();};root.querySelector('#show-legacy').onclick=()=>{history=true;B.refresh();};root.querySelectorAll('[data-task-filter]').forEach(el=>el.onchange=()=>{B.filters[el.dataset.taskFilter]=el.value;B.refresh();});}root.querySelectorAll('[data-plan-date]').forEach(el=>el.onclick=()=>{selectedDate=el.dataset.planDate;B.refresh();});}});
+ document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.openTask){B.open('operations','tasks');const task=B.state.tasks.find(t=>t.id===b.dataset.openTask);const key=Object.keys(B.schemas).find(k=>B.schemas[k].collection==='tasks');if(task&&key){const btn=document.querySelector(`[data-edit="${key}"][data-id="${task.id}"]`);btn?.click();}}});
+})(BOS);
+
+</script>
+<script id="bos-legacy">
+BOS.legacyTaskSeeds=[
+  {
+    "id": "legacy-task-0-0",
+    "oldId": "0-0",
+    "v1Id": "",
+    "title": "Definir público e problema do produto digital",
+    "category": "Digital Products",
+    "workstream": "digital",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-0-1",
+    "oldId": "0-1",
+    "v1Id": "",
+    "title": "Definir promessa, escopo e preço do produto digital",
+    "category": "Digital Products",
+    "workstream": "digital",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-0-2",
+    "oldId": "0-2",
+    "v1Id": "2-5",
+    "title": "Criar primeira versão do produto digital",
+    "category": "Digital Products",
+    "workstream": "digital",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-0-3",
+    "oldId": "0-3",
+    "v1Id": "2-6",
+    "title": "Criar página de vendas do produto",
+    "category": "Digital Products",
+    "workstream": "digital",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-0-4",
+    "oldId": "0-4",
+    "v1Id": "",
+    "title": "Validar a oferta com potenciais compradores",
+    "category": "Digital Products",
+    "workstream": "digital",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-0-5",
+    "oldId": "0-5",
+    "v1Id": "0-0",
+    "title": "Definir oferta de AI Automation + Landing Pages",
+    "category": "Ofertas",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-0-6",
+    "oldId": "0-6",
+    "v1Id": "0-4",
+    "title": "Criar perfil profissional em inglês",
+    "category": "Operação",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-0-7",
+    "oldId": "0-7",
+    "v1Id": "0-5",
+    "title": "Configurar recebimento internacional",
+    "category": "Operação",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-0",
+    "oldId": "1-0",
+    "v1Id": "0-1",
+    "title": "Definir preço de setup e mensalidade",
+    "category": "Oferta e precificação",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-1",
+    "oldId": "1-1",
+    "v1Id": "0-2",
+    "title": "Criar landing page demo para clínica odontológica",
+    "category": "Demo e automação",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-2",
+    "oldId": "1-2",
+    "v1Id": "0-3",
+    "title": "Criar fluxo de follow-up",
+    "category": "Demo e automação",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-3",
+    "oldId": "1-3",
+    "v1Id": "0-6",
+    "title": "Criar proposta padrão",
+    "category": "Vendas",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-4",
+    "oldId": "1-4",
+    "v1Id": "0-7",
+    "title": "Preparar 3 demonstrações",
+    "category": "Vendas",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-5",
+    "oldId": "1-5",
+    "v1Id": "1-0",
+    "title": "Pesquisar 100 prospects",
+    "category": "Pesquisa e leads",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-6",
+    "oldId": "1-6",
+    "v1Id": "1-1",
+    "title": "Criar planilha de leads",
+    "category": "Pesquisa e leads",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-7",
+    "oldId": "1-7",
+    "v1Id": "1-2",
+    "title": "Enviar 10 a 15 mensagens por dia",
+    "category": "Contato e follow-up",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-8",
+    "oldId": "1-8",
+    "v1Id": "1-3",
+    "title": "Fazer follow-up com quem não responder",
+    "category": "Contato e follow-up",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-9",
+    "oldId": "1-9",
+    "v1Id": "1-4",
+    "title": "Agendar calls de 15 minutos",
+    "category": "Calls e propostas",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-10",
+    "oldId": "1-10",
+    "v1Id": "1-5",
+    "title": "Enviar pelo menos 3 propostas",
+    "category": "Calls e propostas",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-1-11",
+    "oldId": "1-11",
+    "v1Id": "1-6",
+    "title": "Registrar objeções e aprendizados",
+    "category": "Aprendizado",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-2-0",
+    "oldId": "2-0",
+    "v1Id": "2-0",
+    "title": "Fechar 1 a 3 clientes-piloto",
+    "category": "Clientes e entrega",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-2-1",
+    "oldId": "2-1",
+    "v1Id": "2-1",
+    "title": "Realizar onboarding do cliente",
+    "category": "Clientes e entrega",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-2-2",
+    "oldId": "2-2",
+    "v1Id": "2-2",
+    "title": "Entregar landing page e automação",
+    "category": "Clientes e entrega",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-2-3",
+    "oldId": "2-3",
+    "v1Id": "2-3",
+    "title": "Coletar depoimento",
+    "category": "Prova e case",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-2-4",
+    "oldId": "2-4",
+    "v1Id": "2-4",
+    "title": "Criar case antes/depois",
+    "category": "Prova e case",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-2-5",
+    "oldId": "2-5",
+    "v1Id": "2-7",
+    "title": "Testar 5 a 10 criativos de anúncio",
+    "category": "AI Ads / UGC Ads",
+    "workstream": "ads",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-2-6",
+    "oldId": "2-6",
+    "v1Id": "",
+    "title": "Melhorar o produto com feedback dos compradores",
+    "category": "Digital Products",
+    "workstream": "digital",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-3-0",
+    "oldId": "3-0",
+    "v1Id": "3-0",
+    "title": "Revisar todas as métricas",
+    "category": "Análise de dados",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-3-1",
+    "oldId": "3-1",
+    "v1Id": "3-1",
+    "title": "Identificar a linha com mais resposta",
+    "category": "Análise de dados",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-3-2",
+    "oldId": "3-2",
+    "v1Id": "3-2",
+    "title": "Identificar a linha com mais pagamento",
+    "category": "Análise de dados",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-3-3",
+    "oldId": "3-3",
+    "v1Id": "3-3",
+    "title": "Padronizar processos e templates",
+    "category": "Processos e preço",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-3-4",
+    "oldId": "3-4",
+    "v1Id": "3-4",
+    "title": "Definir preço final",
+    "category": "Processos e preço",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-3-5",
+    "oldId": "3-5",
+    "v1Id": "3-5",
+    "title": "Escolher o foco principal de dezembro",
+    "category": "Dezembro",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  },
+  {
+    "id": "legacy-task-3-6",
+    "oldId": "3-6",
+    "v1Id": "3-6",
+    "title": "Criar plano de 30 dias para dezembro",
+    "category": "Dezembro",
+    "workstream": "services",
+    "priority": "medium",
+    "status": "backlog",
+    "due": "",
+    "estimate": null,
+    "actual": null,
+    "productId": "",
+    "dependencies": [],
+    "notes": "Preservada do plano de 1 a 30 de novembro. A data de conclusão original não foi registrada.",
+    "cycle": "legacy"
+  }
 ];
 
-const legacyWeeks=weeks.map(w=>w.tasks.map(t=>t[1]));
-const oldAutomation=weeks[0].tasks;
-weeks[0]={name:'Produto e ofertas',range:'1 a 7',start:1,end:7,summary:'Priorizar Digital Products: definir público, problema, oferta, preço, produto mínimo e página de vendas. Definir a oferta de automação; executar o serviço na Semana 2.',tasks:[['Digital Products','Definir público e problema do produto digital'],['Digital Products','Definir promessa, escopo e preço do produto digital'],['Digital Products','Criar primeira versão do produto digital'],['Digital Products','Criar página de vendas do produto'],['Digital Products','Validar a oferta com potenciais compradores'],['Ofertas','Definir oferta de AI Automation + Landing Pages'],['Operação','Criar perfil profissional em inglês'],['Operação','Configurar recebimento internacional']]};
-weeks[1].tasks=[...oldAutomation.filter((_,i)=>![0,4,5].includes(i)),...weeks[1].tasks];
-weeks[1].summary='Executar AI Automation + Landing Pages: demo, follow-up e proposta. Prospectar clínicas odontológicas nos EUA e continuar validando o produto digital.';
-weeks[2].tasks=weeks[2].tasks.filter(t=>!['Criar primeira versão do produto digital','Criar página de vendas do produto'].includes(t[1]));
-weeks[2].tasks.push(['Digital Products','Melhorar o produto com feedback dos compradores']);
-weeks[2].summary='Entregar pilotos, melhorar o produto digital com feedback real e testar criativos em pequena escala.';
-const milestones=[{day:3,text:'Oferta definida.'},{day:7,text:'Produto digital v1 publicado e primeiras 10 mensagens enviadas.'},{day:10,text:'50 prospects pesquisados e 20 mensagens enviadas.'},{day:14,text:'20 conversas e 3 propostas enviadas.'},{day:18,text:'Primeiro cliente-piloto.'},{day:21,text:'Produto digital v1 melhorado e criativos testados.'},{day:25,text:'Case inicial e processo de recorrência.'},{day:30,text:'Decisão baseada em dados sobre o foco principal de dezembro.'}];
-const metricDefs=[['messages','Mensagens enviadas',50],['replies','Respostas recebidas',5],['scheduled','Calls agendadas',3],['calls','Calls realizadas',3],['proposals','Propostas enviadas',1],['clients','Clientes fechados',null],['revenue','Receita em dólar',null],['mrr','Receita recorrente mensal',10000],['hours','Horas trabalhadas',null],['costs','Custos de entrega e ferramentas',null],['fees','Taxas de pagamento',null],['refunds','Reembolsos',null],['ads','Investimento em aquisição',null],['visits','Visitas à página',null],['orders','Pedidos pagos',null],['newCustomers','Novos clientes',null]];
-const bets=['AI Automation + Landing Pages','Digital Products','AI Ads / UGC Ads'];
-const rules=['Um serviço principal por vez.','Um nicho e um país-alvo por vez.','Vender resultado, não tecnologia.','Fazer amostras pequenas, não entregar o projeto inteiro antes.','Cobrar desde o início.','Não comprar listas de leads.','Não prometer resultados garantidos.','Respeitar opt-out e consentimento em mensagens.','Registrar métricas todos os dias.','Revisar progresso todo domingo.'];
-const defaultState=()=>({version:2,sectors:Array.from({length:3},()=>Array.from({length:4},()=>Object.fromEntries(metricDefs.map(([id])=>[id,null])))),year:2026,month:11,checks:{},metrics:Array.from({length:4},()=>Object.fromEntries(metricDefs.map(([id])=>[id,null]))),bets:Array.from({length:3},()=>({messages:null,replies:null,scheduled:null,proposals:null,clients:null,revenue:null,ease:'',recurring:''})),day:1,mode:'auto'});
-const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
-const fmt=n=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(n);
-const money=n=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'USD'}).format(n);
-const countIds=new Set(['messages','replies','scheduled','calls','proposals','clients','visits','orders','newCustomers']);
-const validIds=new Set(weeks.flatMap((w,wi)=>w.tasks.map((_,ti)=>`${wi}-${ti}`)));
-let state=defaultState(),selectedWeek=0,selectedDay=1,metricWeek=0,saveError=false,toastTimer;
-function validate(raw){
- if(!raw||typeof raw!=='object'||Array.isArray(raw)||![1,2].includes(raw.version)||raw.year!==2026||raw.month!==11)throw Error('O arquivo não corresponde ao plano de novembro de 2026.');
- const out=defaultState();
- if(!raw.checks||typeof raw.checks!=='object'||Array.isArray(raw.checks))throw Error('Checklist inválido.');
- for(const [id,value] of Object.entries(raw.checks)){if(typeof value!=='boolean')throw Error('Uma tarefa no arquivo é inválida.');if(raw.version===1){const [w,t]=id.split('-').map(Number),text=legacyWeeks[w]?.[t];if(!text)throw Error('Tarefa antiga inválida.');weeks.forEach((week,wi)=>week.tasks.forEach((task,ti)=>{if(task[1]===text)out.checks[wi+'-'+ti]=value;}));}else{if(!validIds.has(id))throw Error('Tarefa inválida.');out.checks[id]=value;}}
- if(!Array.isArray(raw.metrics)||raw.metrics.length!==4||!Array.isArray(raw.bets)||raw.bets.length!==3)throw Error('Períodos ou apostas inválidos.');
- function numeric(v,id){if(v===null)return null;if(typeof v!=='number'||!Number.isFinite(v)||v<0||v>1e12||(countIds.has(id)&&!Number.isInteger(v)))throw Error('Há números inválidos no arquivo.');return v;}
- raw.metrics.forEach((m,i)=>{if(!m||typeof m!=='object')throw Error('Métricas inválidas.');metricDefs.forEach(([id])=>out.metrics[i][id]=numeric(m[id]??null,id));});
- raw.bets.forEach((b,i)=>{if(!b||typeof b!=='object')throw Error('Aposta inválida.');['messages','replies','scheduled','proposals','clients','revenue'].forEach(id=>out.bets[i][id]=numeric(b[id],id));['ease','recurring'].forEach(id=>{if(!['','1','2','3','4','5'].includes(b[id]))throw Error('Avaliação inválida.');out.bets[i][id]=b[id];});});
- if(!Number.isInteger(raw.day)||raw.day<1||raw.day>30||!['auto','manual'].includes(raw.mode))throw Error('Dia ou modo inválido.');
- if(raw.sectors!==undefined){if(!Array.isArray(raw.sectors)||raw.sectors.length!==3)throw Error('Setores inválidos.');raw.sectors.forEach((sector,i)=>{if(!Array.isArray(sector)||sector.length!==4)throw Error('Semanas inválidas.');sector.forEach((m,w)=>{if(!m||typeof m!=='object')throw Error('Métrica inválida.');metricDefs.forEach(([id])=>out.sectors[i][w][id]=numeric(m[id]??null,id));});});}
- out.day=raw.day;out.mode=raw.mode;return out;
-}
-let startupMessage='';
-try{const saved=localStorage.getItem(KEY);if(saved)state=validate(JSON.parse(saved));}catch(e){saveError=true;startupMessage='Não foi possível carregar o progresso salvo. Exporte um backup antes de fechar esta página.';}
-function toast(message){$('#toast').textContent=message;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').textContent='',4200);}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(state));saveError=false;$('#save-status').textContent='Salvo neste navegador · '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})+' · Exporte um backup para guardar seu progresso.';}catch(e){saveError=true;$('#save-status').textContent='Armazenamento indisponível. O progresso está só nesta sessão: exporte um JSON antes de fechar.';}}
-function planDay(){if(state.mode==='manual')return state.day;const now=new Date(),start=new Date(2026,10,1),end=new Date(2026,11,1);if(now<start)return 0;if(now>=end)return 31;return now.getDate();}
-function weekOf(day){return weeks.findIndex(w=>day>=w.start&&day<=w.end);}
-selectedDay=Math.max(1,Math.min(30,planDay()));selectedWeek=Math.max(0,weekOf(selectedDay));metricWeek=selectedWeek;
-function totals(){const sum=id=>state.metrics.reduce((n,m)=>n+(m[id]??0),0);const mrr=[...state.metrics].reverse().find(m=>m.mrr!==null)?.mrr??0;return {...Object.fromEntries(metricDefs.map(([id])=>[id,sum(id)])),mrr};}
-function completion(){const done=Object.values(state.checks).filter(Boolean).length,total=validIds.size;return{done,total,pct:Math.round(done/total*100)};}
-
-const motionQuery=matchMedia('(prefers-reduced-motion: reduce)');
-const counterValues=new Map(), counterFrames=new WeakMap();
-const iconPaths={overview:'<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/>',schedule:'<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18m-12 5h3"/>',checklists:'<rect x="4" y="3" width="16" height="18" rx="3"/><path d="m8 12 3 3 5-6"/>',metrics:'<path d="M4 4v16h17M9 16v-5m5 5V8m5 8V4"/>',decisions:'<path d="M12 21V5m-7 6V5h14v6M2 16l3-5 3 5H2Zm14 0 3-5 3 5h-6Z"/>',rules:'<path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/>',export:'<path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/>',import:'<path d="M12 15V3m-4 4 4-4 4 4M4 16v5h16v-5"/>'};
-function icon(name){return `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${iconPaths[name]||iconPaths.metrics}</svg>`;}
-function countTo(el,target,key,format=fmt){
- if(!el)return;const prior=counterValues.get(key),start=prior??0;counterValues.set(key,target);
- cancelAnimationFrame(counterFrames.get(el));
- if(motionQuery.matches||el.closest('[hidden]')||start===target){el.textContent=format(target);return;}
- const began=performance.now();el.textContent=format(start);
- function tick(now){const t=Math.min(1,(now-began)/420),v=start+(target-start)*(1-Math.pow(1-t,3));el.textContent=format(t===1?target:(format===fmt?Math.round(v):v));if(t<1)counterFrames.set(el,requestAnimationFrame(tick));}
- counterFrames.set(el,requestAnimationFrame(tick));
-}
-function animateBars(root){if(motionQuery.matches)return;root.querySelectorAll('.bar').forEach(bar=>{bar.classList.remove('enter');void bar.offsetWidth;bar.classList.add('enter');});}
-function revealPanel(root){animateBars(root);root.querySelectorAll('[data-count-key]').forEach(el=>{const key=el.dataset.countKey,target=counterValues.get(key);if(target!==undefined){counterValues.delete(key);countTo(el,target,key,el.dataset.money==='true'?money:fmt);}});}
-let saveFeedbackTimer;
-function savedFeedback(input){if(saveError)return;const card=input?.closest('.field');if(card){card.classList.add('saved');clearTimeout(card._savedTimer);card._savedTimer=setTimeout(()=>card.classList.remove('saved'),1800);}$('#save-status').classList.add('is-saved');clearTimeout(saveFeedbackTimer);saveFeedbackTimer=setTimeout(()=>$('#save-status').classList.remove('is-saved'),2000);}
-function updateMetricEmpty(){const empty=metricDefs.every(([id])=>state.metrics[metricWeek][id]===null),el=$('#metrics-empty');el.hidden=!empty;if(empty)el.innerHTML=icon('metrics')+'<div><strong>Esta semana começa com uma página em branco.</strong><p>Registre sua primeira métrica abaixo. Seus dados ficam salvos neste navegador.</p></div>';}
-function updateDashboard(){
- const c=completion(),d=planDay(),remaining=d===0?30:d===31?0:30-d,t=totals();
- if(!$('#stats').children.length){$('#stats').innerHTML=['Progresso geral do mês','Dias restantes','Tarefas concluídas','Tarefas pendentes'].map((label,i)=>`<div class="card"><span class="stat-label">${label}</span><span class="stat-value" id="stat-${i}" data-count-key="stat-${i}"></span><span class="small" id="stat-note-${i}"></span>${i===0?'<div class="bar"><span id="overview-bar"></span></div>':''}</div>`).join('');}
- [c.pct,remaining,c.done,c.total-c.done].forEach((value,i)=>countTo($('#stat-'+i),value,'stat-'+i,i===0?v=>fmt(Math.round(v))+'%':fmt));
- ['Conclusão das tarefas',d===0?'O plano começa em 1 de novembro':d===31?'Período encerrado':'Após o dia atual do plano','De '+c.total+' entregas','Próximos passos concretos'].forEach((text,i)=>$('#stat-note-'+i).textContent=text);
- $('#overview-bar').style.width=c.pct+'%';
- countTo($('#status-progress'),c.pct,'footer-progress',v=>fmt(Math.round(v))+'%');$('#status-bar').style.width=c.pct+'%';$('#status-tasks').textContent=c.done+' / '+c.total;
- const next=milestones.find(m=>m.day>=d);$('#status-next').textContent=next?`Dia ${next.day} · ${next.text}`:'Plano encerrado · revisar decisão de dezembro';
- $('#top-day').textContent=d===0?'Início em 1 nov':d===31?'30 dias encerrados':`Dia ${d} de 30`;
- $('#top-next').textContent=next?`Próximo marco: Dia ${next.day} — ${next.text}`:'Plano encerrado · revisar decisão de dezembro';$('#top-next').title=$('#top-next').textContent;
- countTo($('#top-percent'),c.pct,'top-progress',v=>fmt(Math.round(v))+'%');$('#top-progress-bar').style.width=c.pct+'%';$('#top-progress-track').setAttribute('aria-valuenow',c.pct);
- $('#day-input').value=Math.min(30,Math.max(1,d));$('#day-input').disabled=state.mode==='auto';$('#day-mode').value=state.mode;
- $('#day-input').title=d===0?'Antes de novembro de 2026':d===31?'Após novembro de 2026':'Dia '+d+' do plano';
- if(!$('#revenue-summary').children.length)$('#revenue-summary').innerHTML=['Receita em novembro','Receita recorrente mensal'].map((label,i)=>`<div><span class="small">${label}</span><strong id="revenue-${i}" data-count-key="revenue-${i}" data-money="true"></strong></div>`).join('');
- [t.revenue,t.mrr].forEach((value,i)=>countTo($('#revenue-'+i),value,'revenue-'+i,money));
- if(!$('#month-totals').children.length)$('#month-totals').innerHTML=metricDefs.map(([id,label])=>`<div><span class="small">${label}</span><strong id="total-${id}" data-count-key="total-${id}" data-money="${['revenue','mrr','costs','fees','refunds','ads'].includes(id)}"></strong></div>`).join('');
- metricDefs.forEach(([id])=>countTo($('#total-'+id),t[id],'total-'+id,['revenue','mrr','costs','fees','refunds','ads'].includes(id)?money:fmt));
- if(d===0||d===31){$('#status-progress').title=d===0?'Plano ainda não iniciado; progresso mede tarefas.':'Novembro de 2026 encerrado; progresso mede tarefas.';}
- $$('.day').forEach(el=>el.classList.toggle('current',Number(el.dataset.day)===d));
-}
-const navItems=[['overview','Visão Geral'],['schedule','Cronograma'],['checklists','Checklists'],['metrics','Métricas'],['decisions','Decisões']];
-$('#nav').innerHTML=navItems.map(([id,label],i)=>`<button type="button" data-view="${id}" aria-controls="${id}" aria-current="${i===0?'page':'false'}" class="${i===0?'active':''}">${icon(id)}${label}</button>`).join('');
-function navigate(id){const previous=navItems.find(([view])=>!$('#'+view).hidden)?.[0];navItems.forEach(([view])=>$('#'+view).hidden=view!==id);$$('[data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===id);b.setAttribute('aria-current',b.dataset.view===id?'page':'false');});if(previous!==id){const panel=$('#'+id);panel.style.animation='none';void panel.offsetWidth;panel.style.animation='';revealPanel(panel);const main=$('#main'),sticky=$('.nav-shell');if(main.getBoundingClientRect().top<sticky.getBoundingClientRect().bottom)main.scrollIntoView({block:'start',behavior:'instant'});}$('#nav .active')?.scrollIntoView({block:'nearest',inline:'nearest',behavior:motionQuery.matches?'instant':'smooth'});}
-$('#nav').addEventListener('click',e=>{const b=e.target.closest('[data-view]');if(b)navigate(b.dataset.view);});
-$('#allocations').innerHTML=bets.map((bet,i)=>`<div class="allocation"><div class="between"><span>${bet}</span><strong class="accent">${[40,50,10][i]}%</strong></div><div class="bar"><span style="width:${[40,50,10][i]}%"></span></div></div>`).join('');
-function baseSchedule(){
- $('#week-tabs').innerHTML=weeks.map((w,i)=>`<button data-week="${i}" aria-pressed="${selectedWeek===i}" class="${selectedWeek===i?'active':''}"><small>Semana ${i+1} · ${w.range} nov</small>${w.name}</button>`).join('');
- $('#calendar').innerHTML=Array.from({length:30},(_,i)=>{const d=i+1,m=milestones.find(m=>m.day===d);return `<button class="day ${weekOf(d)===selectedWeek?'selected':''} ${m?'milestone':''} ${d===planDay()?'current':''}" data-day="${d}" aria-pressed="${selectedDay===d}" aria-label="Dia ${d} de novembro${m?' — '+m.text:''}">${String(d).padStart(2,'0')}<span>NOV</span></button>`;}).join('');
- const w=weeks[selectedWeek];$('#week-detail').innerHTML=`<span class="eyebrow">${w.range} de novembro</span><h3 class="divider">Semana ${selectedWeek+1} — ${w.name}</h3><p class="muted">${w.summary}</p><ul>${w.tasks.map(([,task])=>`<li>${task}</li>`).join('')}</ul><button class="link-button" id="go-checks">Abrir checklists →</button>`;
- $('#go-checks').onclick=()=>{navigate('checklists');$('#check-week-'+selectedWeek).scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});};
- const m=milestones.find(m=>m.day===selectedDay),upcoming=milestones.find(m=>m.day>selectedDay);$('#day-detail').textContent=`Dia ${selectedDay} de novembro · ${m?'Marco: '+m.text:'Semana '+(weekOf(selectedDay)+1)+' — '+weeks[weekOf(selectedDay)].name+'. '+(upcoming?'Próximo marco: dia '+upcoming.day+' — '+upcoming.text:'Execute as tarefas e registre suas métricas.')}`;
- $('#milestones').innerHTML=milestones.map(m=>`<div class="milestone-card"><strong>DIA ${String(m.day).padStart(2,'0')}</strong>${m.text}</div>`).join('');
-}
-$('#week-tabs').onclick=e=>{const b=e.target.closest('[data-week]');if(b){selectedWeek=+b.dataset.week;selectedDay=weeks[selectedWeek].start;renderSchedule();}};
-$('#calendar').onclick=e=>{const b=e.target.closest('[data-day]');if(b){selectedDay=+b.dataset.day;selectedWeek=weekOf(selectedDay);renderSchedule();}};
-function renderChecks(){
- $('#check-grid').innerHTML=weeks.map((w,wi)=>{let last='';const done=w.tasks.filter((_,ti)=>state.checks[`${wi}-${ti}`]).length;return `<article class="card" id="check-week-${wi}"><div class="between"><h3>Semana ${wi+1} — ${wi===3?'Otimização':w.name}</h3><span class="count" id="count-${wi}">${done}/${w.tasks.length}</span></div><span class="small">${w.range} de novembro</span><div class="bar"><span id="check-bar-${wi}" style="width:${done/w.tasks.length*100}%"></span></div>${w.tasks.map(([area,task],ti)=>{const title=area!==last?`<div class="area-title">${area}</div>`:'';last=area;const id=`${wi}-${ti}`;return `${title}<label class="task"><input type="checkbox" data-task="${id}" ${state.checks[id]?'checked':''}><span>${task}</span></label>`;}).join('')}</article>`;}).join('');
-}
-$('#check-grid').onchange=e=>{const id=e.target.dataset.task;if(!validIds.has(id))return;state.checks[id]=e.target.checked;e.target.closest('.task').classList.toggle('just-completed',e.target.checked);const wi=Number(id.split('-')[0]),w=weeks[wi],n=w.tasks.filter((_,ti)=>state.checks[`${wi}-${ti}`]).length;$('#count-'+wi).textContent=n+'/'+w.tasks.length;$('#check-bar-'+wi).style.width=n/w.tasks.length*100+'%';save();savedFeedback();updateDashboard();if(e.target.checked)toast(n===w.tasks.length?'Semana concluída. Boa execução!':'Tarefa concluída. Mais um passo registrado.');};
-$('#metric-week').innerHTML=weeks.map((w,i)=>`<option value="${i}">Semana ${i+1} · ${w.range} de novembro</option>`).join('');
-function renderMetrics(){
- $('#metric-week').value=metricWeek;updateMetricEmpty();$('#metric-grid').innerHTML=metricDefs.map(([id,label,target])=>{const value=state.metrics[metricWeek][id],moneyField=['revenue','mrr','costs','fees','refunds','ads'].includes(id);let hint=target?`Referência: ${target} ${id==='mrr'?'US$/mês (meta final)':'por semana'}`:'Registro acumulado da semana';if(id==='replies')hint='Meta: 5 a 10 respostas por semana';if(id==='calls')hint='Referência: 3 calls por semana';if(id==='clients')hint='Meta: 1 cliente-piloto até o dia 21';if(id==='mrr')hint='Posição ao fim desta semana · meta final: US$ 10.000/mês';return `<div class="card field"><label for="metric-${id}">${label}${moneyField?' (US$)':''}</label><input type="number" id="metric-${id}" data-metric="${id}" min="0" max="1000000000000" step="${countIds.has(id)?'1':'0.01'}" inputmode="${countIds.has(id)?'numeric':'decimal'}" value="${value??''}" placeholder="Não informado"><span class="small">${hint}</span>${target?`<div class="bar" role="progressbar" aria-label="${label}" aria-valuemin="0" aria-valuemax="${target}" aria-valuenow="${Math.min(target,value??0)}"><span data-bar="${id}" style="width:${Math.min(100,(value??0)/target*100)}%"></span></div>`:''}</div>`;}).join('');
-}
-$('#metric-week').onchange=e=>{metricWeek=+e.target.value;renderMetrics();animateBars($('#metrics'));};
-function readNumber(input){if(input.value===''&&!input.validity.badInput)return null;const v=input.valueAsNumber;if(!input.validity.valid||!Number.isFinite(v)||v<0||v>1e12){input.setAttribute('aria-invalid','true');return undefined;}input.removeAttribute('aria-invalid');return v;}
-const decisionFields=[['messages','Número de mensagens enviadas'],['replies','Respostas recebidas (para calcular a taxa)'],['rate','Taxa de resposta'],['scheduled','Calls agendadas'],['proposals','Propostas enviadas'],['clients','Clientes pagantes'],['revenue','Receita gerada (US$)'],['ease','Facilidade de entrega'],['recurring','Potencial de receita recorrente']];
-$('#day-mode').onchange=e=>{const previousDay=planDay();state.mode=e.target.value;if(state.mode==='manual')state.day=Math.max(1,Math.min(30,previousDay));save();updateDashboard();renderSchedule();};
-$('#day-input').onchange=e=>{const value=readNumber(e.target);if(value===undefined||value===null){toast('Escolha um dia inteiro de 1 a 30.');updateDashboard();return;}state.day=value;state.mode='manual';selectedDay=value;selectedWeek=weekOf(value);save();updateDashboard();renderSchedule();};
-$('#export').onclick=()=>{const blob=new Blob([JSON.stringify({...state,exportedAt:new Date().toISOString()},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='side-hustle-novembro-2026-progresso.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Backup JSON exportado. Guarde-o em um local seguro.');};
-$('#import').onclick=()=>$('#import-file').click();
-$('#import-file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>1000000)throw Error('Arquivo muito grande. Use um backup JSON de até 1 MB.');const candidate=validate(JSON.parse(await file.text()));if(!confirm('Importar este backup substituirá os checklists, métricas e decisões atuais neste navegador. Exporte os dados atuais antes, se precisar preservá-los. Continuar?'))return;state=candidate;save();renderChecks();renderMetrics();renderDecisionTable();selectedDay=Math.max(1,Math.min(30,planDay()));selectedWeek=weekOf(selectedDay);renderSchedule();updateDashboard();toast(saveError?'Importado nesta sessão. Exporte antes de fechar: armazenamento indisponível.':'Progresso importado com sucesso.');}catch(err){toast('Importação não realizada. '+(err instanceof SyntaxError?'O arquivo não contém JSON válido.':err.message));}finally{e.target.value='';}};
-
-const dailyPlans=[["Público e problema", "Digital Products", "Escolher um público específico|Listar três problemas recorrentes|Selecionar um problema urgente", "Público e problema registrados."], ["Pesquisa de demanda", "Digital Products", "Conversar com potenciais compradores|Anotar alternativas que já utilizam|Registrar objeções e linguagem real", "Lista de evidências e objeções."], ["Ofertas definidas", "Digital Products", "Definir promessa e escopo do produto|Definir preço inicial|Esboçar oferta de automação para a Semana 2", "Duas ofertas descritas; produto digital prioritário."], ["Construir o produto mínimo", "Digital Products", "Escolher o formato mais simples: template, guia ou ferramenta|Criar o conteúdo central que resolve o problema escolhido|Testar o material como se fosse o comprador", "Primeira versão utilizável, com instruções de uso."], ["Página e pagamento", "Digital Products", "Escrever promessa, público, conteúdo e preço|Criar página de vendas|Testar compra, recebimento e acesso ao arquivo", "Jornada de compra testada sem cobrar uma venda fictícia."], ["Amostra e validação", "Digital Products", "Preparar uma amostra pequena|Apresentar a oferta a potenciais compradores|Registrar respostas e ajustes necessários", "Feedback real e lista de ajustes."], ["Primeira versão no ar", "Digital Products", "Publicar a versão mínima|Enviar as primeiras 10 mensagens relevantes|Revisar a semana e registrar métricas", "Produto acessível e primeiros contatos registrados."], ["Setup de automação", "AI Automation + Landing Pages", "Definir preço de setup e mensalidade|Definir escopo do piloto|Preparar proposta padrão", "Pacote comercial delimitado."], ["Demo odontológica", "AI Automation + Landing Pages", "Criar landing page demo|Preparar fluxo de follow-up|Usar dados fictícios claramente identificados", "Demo navegável e fluxo demonstrável."], ["Pesquisa e contatos", "AI Automation + Landing Pages", "Pesquisar 50 prospects no total|Registrar dados públicos e contexto em planilha|Atingir 20 mensagens enviadas no total", "Lista qualificada e contatos registrados."], ["Demonstrações", "AI Automation + Landing Pages", "Preparar 3 demonstrações curtas|Personalizar mensagens para o problema da clínica|Reservar um bloco para feedback do produto digital", "Três demos e novas respostas registradas."], ["Calls e objeções", "AI Automation + Landing Pages", "Agendar calls de 15 minutos|Entender problema, urgência e orçamento|Registrar objeções sem prometer resultados", "Resumo de cada conversa e próximo passo."], ["Propostas", "AI Automation + Landing Pages", "Enviar propostas com escopo e prazo|Fazer follow-up respeitando opt-out|Revisar dúvidas sobre o produto digital", "Propostas e feedback atualizados."], ["Revisão da prospecção", "AI Automation + Landing Pages", "Buscar o marco de 20 conversas e 3 propostas|Comparar contatos com respostas|Registrar métricas e revisar a semana", "Funil revisado com dados reais, mesmo abaixo da meta."], ["Fechamento do piloto", "AI Automation + Landing Pages", "Retomar propostas abertas|Acordar escopo, pagamento e acesso|Manter um bloco para suporte do produto digital", "Próximo passo comercial acordado."], ["Onboarding", "AI Automation + Landing Pages", "Coletar requisitos e acessos mínimos|Confirmar critério de aceite|Organizar etapas da entrega", "Briefing e checklist de entrega aprovados."], ["Entrega rápida", "AI Automation + Landing Pages", "Implementar landing page|Conectar e testar follow-up autorizado|Documentar o que foi entregue", "Entrega pronta para validação do cliente."], ["Primeiro cliente-piloto", "AI Automation + Landing Pages", "Buscar o primeiro piloto pago|Se não fechar, revisar objeções e proposta|Atualizar receita recebida e custos reais", "Pagamento real registrado ou plano de correção explícito."], ["Feedback e prova", "Digital Products", "Pedir feedback aos compradores|Corrigir a principal dificuldade de uso|Solicitar depoimento autorizado ao piloto", "Melhorias e prova real documentadas."], ["Criativos pequenos", "AI Ads / UGC Ads", "Definir hipótese e limite de gasto|Criar variantes de gancho e demonstração|Preparar 5 a 10 criativos sem alterar tudo de uma vez", "Criativos e hipóteses identificados."], ["Validação da versão 1", "Digital Products", "Confirmar produto v1 publicado|Registrar resultados dos criativos testados|Revisar vendas, custos e feedback da semana", "Produto, criativos e métricas revisados."], ["Leitura financeira", "Digital Products", "Preencher taxas, custos e reembolsos|Separar receita recebida de MRR|Conferir saldo por setor", "Financeiro reconciliado com registros de pagamento."], ["Conversão do produto", "Digital Products", "Comparar visitas e pedidos|Identificar a maior objeção|Testar uma melhoria de página ou oferta", "Uma hipótese de conversão e critério de avaliação."], ["Entrega padronizada", "AI Automation + Landing Pages", "Transformar entrega em template|Documentar onboarding e follow-up|Revisar tempo de suporte e custo", "Processo repetível e custos conhecidos."], ["Case e recorrência", "AI Automation + Landing Pages", "Criar case com evidência autorizada|Definir o que a mensalidade entrega|Confirmar próximos passos com o cliente", "Case inicial e processo de recorrência."], ["Preço e margem", "Digital Products", "Comparar preço com custos e aquisição|Avaliar facilidade de entrega|Escolher um ajuste de preço ou escopo", "Preço proposto com justificativa financeira."], ["Comparação dos setores", "Digital Products", "Abrir cada setor em Decisões|Comparar pagamento, saldo e esforço|Distinguir dados ausentes de resultados ruins", "Comparação baseada em registros reais."], ["Revisão semanal", "Digital Products", "Revisar tarefas pendentes|Conferir métricas dos três setores|Escolher pendências que alteram a decisão final", "Pendências priorizadas e financeiro atualizado."], ["Plano de dezembro", "Digital Products", "Escolher oferta candidata com melhor evidência|Definir capacidade de entrega e orçamento|Esboçar plano de 30 dias", "Plano inicial de dezembro."], ["Decisão baseada em dados", "Digital Products", "Revisar vendas, margem, tempo e recorrência|Escolher foco de dezembro e justificar|Exportar backup JSON e registrar aprendizados", "Foco de dezembro definido com evidências."]];
-
-function renderSchedule(){baseSchedule();const [title,area,actions,done]=dailyPlans[selectedDay-1];$('#daily-guide').innerHTML=`<span class="eyebrow">Dia ${selectedDay} de novembro · ${area}</span><h3>${title}</h3><ol>${actions.split('|').map(a=>`<li>${a}</li>`).join('')}</ol><div class="note"><strong>Critério de conclusão</strong><p>${done}</p></div><p class="small">Guia proposto para execução. Registre resultados reais; marcos são metas, não resultados presumidos.</p><button id="daily-checks">Ver checklist da semana →</button>`;$('#daily-checks').onclick=()=>{navigate('checklists');$('#check-week-'+weekOf(selectedDay)).scrollIntoView({block:'start',behavior:'smooth'});};}
-let metricSector='1',decisionSector=1;
-function activeSeries(){return metricSector==='legacy'?state.metrics:state.sectors[+metricSector];}
-function aggregate(series){const result=Object.fromEntries(metricDefs.map(([id])=>[id,series.some(m=>m[id]!==null)?series.reduce((n,m)=>n+(m[id]??0),0):null]));result.mrr=[...series].reverse().find(m=>m.mrr!==null)?.mrr??null;return result;}
-function totals(){const all=[aggregate(state.metrics),...state.sectors.map(aggregate)];return Object.fromEntries(metricDefs.map(([id])=>[id,all.reduce((n,m)=>n+(m[id]??0),0)]));}
-function financials(t){const complete=['revenue','refunds','fees','costs','ads'].every(id=>t[id]!==null);const net=complete?t.revenue-t.refunds-t.fees-t.costs-t.ads:null;return {net,margin:net!==null&&t.revenue>0?net/t.revenue*100:null,cac:t.ads!==null&&t.newCustomers>0?t.ads/t.newCustomers:null,conversion:t.orders!==null&&t.visits>0?t.orders/t.visits*100:null};}
-function value(v,currency=false){return v===null?'Não informado':currency?money(v):fmt(v);}
-function financeCards(t){const f=financials(t);return [['Receita recebida',value(t.revenue,true)],['Saídas registradas',value(['refunds','fees','costs','ads'].every(k=>t[k]!==null)?t.refunds+t.fees+t.costs+t.ads:null,true)],['Saldo operacional',value(f.net,true)],['MRR atual',value(t.mrr,true)]].map(([label,n])=>`<div class="card"><span class="stat-label">${label}</span><strong class="finance-number">${n}</strong></div>`).join('');}
-function updateMetricEmpty(){const el=$('#metrics-empty');el.hidden=!metricDefs.every(([id])=>activeSeries()[metricWeek][id]===null);el.innerHTML='<div><strong>Comece pelos valores reais desta semana.</strong><p>Preencha 0 quando não houve receita ou gasto. Deixe vazio apenas o que ainda não foi apurado.</p></div>';}
-function renderMetrics(){
- $('#metric-sector').value=metricSector;$('#metric-week').value=metricWeek;updateMetricEmpty();
- const groups=[['Financeiro',['revenue','refunds','fees','costs','ads','mrr']],['Aquisição e vendas',['visits','orders','newCustomers','messages','replies','scheduled','calls','proposals','clients']],['Tempo',['hours']]];
- $('#metric-grid').innerHTML=groups.map(([title,ids])=>`<h3 class="metric-group">${title}</h3>`+ids.map(id=>{const [,label]=metricDefs.find(d=>d[0]===id),v=activeSeries()[metricWeek][id],cash=['revenue','refunds','fees','costs','ads','mrr'].includes(id);return `<div class="card field"><label for="metric-${id}">${label}${cash?' (US$)':''}</label><input id="metric-${id}" data-metric="${id}" type="number" min="0" max="1000000000000" step="${countIds.has(id)?1:0.01}" value="${v??''}" placeholder="Não informado"><span class="small">${id==='mrr'?'Posição atual; não some com receita recebida.':id==='ads'?'Aquisição paga e marketing; não repita em custos.':id==='costs'?'Entrega e ferramentas; exclua taxas e aquisição.':'Acumulado deste setor nesta semana.'}</span></div>`;}).join('')).join('');
- $('#finance-summary').innerHTML=financeCards(aggregate(activeSeries()));
-}
-$('#metric-sector').onchange=e=>{metricSector=e.target.value;renderMetrics();};
-$('#metric-grid').oninput=e=>{const id=e.target.dataset.metric;if(!id)return;const v=readNumber(e.target);if(v===undefined)return;activeSeries()[metricWeek][id]=v;save();savedFeedback(e.target);updateMetricEmpty();$('#finance-summary').innerHTML=financeCards(aggregate(activeSeries()));updateDashboard();renderDecisionTable();};
-const decisionPrompts=[['Qual resultado a clínica compra?','Qual escopo cabe no setup e na mensalidade?','Qual etapa de follow-up reduz trabalho manual?','A entrega do piloto pode virar um template?'],['Quem tem um problema urgente que você consegue resolver?','Qual entrega mínima justifica o preço?','A página comunica resultado, formato e acesso?','Os compradores conseguem usar o produto sem ajuda?','Qual objeção aparece antes da compra?'],['Qual público e oferta o criativo está testando?','Qual hipótese muda entre os criativos?','Qual limite de gasto cabe no saldo disponível?','O retorno cobre aquisição e entrega?']];
-function renderDecisionTable(){
- $('#decision-sectors').innerHTML=[1,0,2].map(i=>`<button data-sector="${i}" class="card ${i===decisionSector?'active':''}" aria-pressed="${i===decisionSector}"><span>${[40,50,10][i]}% do esforço</span><strong>${bets[i]}</strong></button>`).join('');
- const t=aggregate(state.sectors[decisionSector]),f=financials(t),legacy=state.bets[decisionSector];
- let title='Coletar evidências',why='Registre vendas, visitas e custos em Métricas para avaliar este setor.';
- if(t.replies!==null&&t.messages!==null&&t.replies>t.messages){title='Revisar os dados';why='As respostas superam as mensagens. Confira se os registros usam o mesmo conjunto de contatos.';}
- else if(f.net!==null&&f.net<0){title='Ajustar antes de ampliar';why='As saídas registradas superam a receita. Revise preço, aquisição e custo de entrega.';}
- else if((t.orders??t.clients??0)>0){title=f.net===null?'Validar margem':'Padronizar e testar expansão';why=f.net===null?'Há vendas. Complete os custos antes de decidir ampliar.':'Há vendas e saldo não negativo. Confira satisfação, tempo de entrega e repetição antes de ampliar.';}
- else if(decisionSector!==1&&t.messages>=50&&t.replies!==null&&t.replies/t.messages<.1){title='Revisar oferta e abordagem';why='Pelo menos 50 mensagens e menos de 10% de resposta: teste uma mudança de oferta com uma nova amostra.';}
- else if(t.visits>0&&t.orders===0){title='Investigar a conversão';why='Há visitas, mas nenhuma compra registrada. Revise origem do tráfego, proposta, preço e checkout; a amostra ainda pode ser pequena.';}
- $('#decision-detail').innerHTML=`<div class="card divider"><span class="eyebrow">${bets[decisionSector]} · novembro</span><h3 class="recommendation">${title}</h3><p class="muted">${why}</p><button id="edit-sector">Registrar resultados deste setor →</button></div><div class="grid stats divider">${financeCards(t)}</div><div class="grid three"><div class="card"><span class="stat-label">Conversão · pedidos / visitas</span><strong class="finance-number">${f.conversion===null?'Sem base':fmt(f.conversion)+'%'}</strong><p class="small">${value(t.orders)} pedidos · ${value(t.visits)} visitas</p></div><div class="card"><span class="stat-label">Custo por novo cliente</span><strong class="finance-number">${f.cac===null?'Sem base':money(f.cac)}</strong><p class="small">Aquisição / novos clientes no período.</p></div><div class="card"><span class="stat-label">Margem operacional</span><strong class="finance-number">${f.margin===null?'Sem base':fmt(f.margin)+'%'}</strong><p class="small">Saldo operacional / receita recebida. Exclui impostos e remuneração própria.</p></div></div><div class="grid two divider"><div class="card"><h3>Decisões a tomar</h3><ol>${decisionPrompts[decisionSector].map(q=>`<li>${q}</li>`).join('')}</ol><p class="small">Use os resultados acima para responder. Ausência de dados não confirma ausência de demanda.</p></div><div class="card"><h3>Viabilidade da entrega</h3>${['ease','recurring'].map(id=>`<label class="evaluation">${id==='ease'?'Facilidade de entrega':'Potencial de recorrência'}<select data-eval="${id}"><option value="">Não avaliado</option>${[1,2,3,4,5].map(v=>`<option value="${v}" ${legacy[id]===String(v)?'selected':''}>${v}/5</option>`).join('')}</select></label>`).join('')}<details><summary>Registros antigos deste setor</summary><p class="small">Preservados para consulta; não somados ao financeiro semanal.</p>${['messages','replies','scheduled','proposals','clients','revenue'].map(id=>`<p class="small">${metricDefs.find(d=>d[0]===id)?.[1]??id}: ${value(legacy[id],id==='revenue')}</p>`).join('')}</details></div></div>`;
- $('#edit-sector').onclick=()=>{metricSector=String(decisionSector);renderMetrics();navigate('metrics');};
-}
-$('#decision-sectors').onclick=e=>{const b=e.target.closest('[data-sector]');if(b){decisionSector=+b.dataset.sector;renderDecisionTable();}};
-$('#decision-detail').onchange=e=>{if(!e.target.dataset.eval)return;state.bets[decisionSector][e.target.dataset.eval]=e.target.value;save();savedFeedback();};
-renderChecks();renderMetrics();renderDecisionTable();renderSchedule();updateDashboard();
-$('#export').innerHTML=icon('export')+'Exportar JSON';$('#import').innerHTML=icon('import')+'Importar JSON';animateBars($('#overview'));animateBars($('.nav-shell'));
-if(startupMessage){$('#save-status').textContent=startupMessage;toast(startupMessage);}else{try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){$('#save-status').textContent='Armazenamento indisponível. Exporte um JSON antes de fechar para preservar os dados.';}}
-// Atualiza a data ao voltar à página e à meia-noite, sem alterar o dia manual.
-let lastDate=new Date().toDateString();
-function refreshDate(){const date=new Date().toDateString();if(date!==lastDate){lastDate=date;updateDashboard();renderSchedule();}}
-document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshDate();});setInterval(refreshDate,30000);
 </script>
-</body>
-</html>
+<script id="bos-boot">
+// Gates connect existing task records instead of creating parallel checklists.
+const betaGate=BOS.productSeeds.tasks.find(t=>t.id==='product-a-readiness-9');
+if(betaGate)betaGate.dependencies=Array.from({length:8},(_,i)=>'product-a-readiness-'+(i+1));
+try{BOS.init();}catch(error){document.querySelector('#bos-content').innerHTML='<div class="card"><h2>Recuperação de dados</h2><p>Os dados originais não foram apagados. Exporte o backup original antes de continuar.</p><button id="recover-raw">Exportar JSON original</button></div>';document.querySelector('#bos-notice').textContent=error.message;document.querySelector('#recover-raw').onclick=()=>BOS.download(localStorage.getItem(BOS.KEY)||localStorage.getItem(BOS.OLD)||'{}','side-hustles-recuperacao.json');}
+</script>
+</body></html>

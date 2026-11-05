@@ -1,32 +1,52 @@
-# Side Hustle Internacional — Plano de 30 Dias
+# Side Hustles — Business Operating System
 
-Dashboard em português do Brasil para acompanhar o plano de 1 a 30 de novembro de 2026.
+Operação pessoal em português do Brasil. HTML/CSS/JavaScript sem dependências, offline e hospedado no GitHub Pages.
 
-## Acessar
+**Site:** https://arthurlaragao.github.io/side-hustle-30-dias/
 
-https://arthurlaragao.github.io/side-hustle-30-dias/
+**Ciclo:** 5 de novembro a 5 de dezembro de 2026 (31 datas, incluindo os dois extremos). Meta ambiciosa do ciclo: US$ 10.000 de receita bruta recebida; não é promessa de resultado.
 
-## Funcionalidades
+## Módulos
 
-- Visão Geral, Cronograma, Checklists, Métricas, Decisões.
-- Tarefas semanais, 30 guias diários e oito marcos, com progresso e métricas no localStorage.
-- Dia automático ou manual e exportação/importação de backup JSON.
-- Layout responsivo, suporte a movimento reduzido e funcionamento offline.
+- Visão Geral: três prioridades, prazos, tarefas, aprovações, contratos, caixa, MRR e pipeline.
+- Digital Products (50%): portfólio, nove etapas, validação, oferta/preço, versões de copy, experimentos, emails, conteúdo, lançamentos, leads e analytics.
+- Serviços (40%): 80% Landing Pages e 20% AI Automation dentro da frente, ofertas editáveis, CRM de dez etapas, qualificação, follow-ups e entrega.
+- AI Ads (10%): tarefas e registros leves de criativos/desempenho.
+- Financeiro: vendas e contratos, despesas e assinaturas; caixa, contratado, pendente e MRR separados.
+- Operações: Master Checklist, filtros, dependências, plano semanal, revisão e backup.
 
-## Usar localmente
+As tarefas são registros únicos. A checklist do produto, as etapas e o Master Checklist consultam os mesmos IDs. Status, prioridade, prazo, estimativa, tempo realizado, dependências e notas são editáveis. Tarefas canceladas ficam preservadas e fora do denominador do progresso.
 
-Baixe `index.html` e abra no navegador. Não há dependências ou etapa de build.
+## Produto A e prontidão
 
-## Dados e backup
+Global Dev Job Search System: template Notion em inglês para desenvolvedores internacionais; beta US$19, preço inicial planejado US$29. Alterações de preço e etapa são manuais. O histórico comercial indica revisão pendente; o dashboard não declara que aceitação por compradores, duplicação em outro workspace ou checkout/entrega estejam validados. Não há depoimentos ou resultados inventados.
 
-Os dados ficam apenas no navegador e não são enviados ao GitHub. Não há sincronização entre dispositivos. A versão local e a versão publicada usam armazenamentos separados: exporte um JSON no arquivo local e importe no site para transferir o progresso. Guarde backups antes de limpar os dados do navegador.
+## Persistência e histórico
 
-## Publicação
+O novo estado usa `side-hustles-business-os-v3`. O estado anterior em `side-hustle-novembro-2026-v1` permanece intocado. A migração guarda o JSON original integralmente, cria um snapshot e preserva os antigos checklists por identidade em **Operações → Master Checklist → Tarefas anteriores**. Métricas e decisões anteriores ficam em **Dados e backup**, sem serem somadas ao novo ciclo.
 
-GitHub Pages configurado para publicar a branch `main`, pasta raiz. Atualize `index.html` para publicar uma nova versão.
+Backups JSON antigos (v1/v2) e novos podem ser importados. A mesclagem usa IDs estáveis, não duplica registros existentes e mantém o registro local em conflitos, guardando a versão recebida para consulta e exportação. Antes da importação é feito um snapshot local. JSON corrompido abre modo de recuperação e não é sobrescrito.
 
-## Prioridades e finanças
+Os dados continuam apenas no navegador, sem login, banco de dados remoto ou sincronização. Exporte backups antes de trocar de dispositivo ou limpar o navegador. O arquivo local, localhost e o site publicado possuem armazenamentos distintos.
 
-Digital Products: 50%; AI Automation + Landing Pages: 40%; AI Ads / UGC Ads: 10%. Semana 1 prioriza o produto digital e a definição das duas ofertas. A execução de automação começa na Semana 2.
+## Finanças e analytics
 
-Métricas e Decisões compartilham registros semanais por setor. Custos, taxas, reembolsos e aquisição alimentam o saldo operacional. Dados anteriores ficam preservados como histórico sem setor. O saldo exclui impostos, câmbio e remuneração própria; campos vazios mantêm indicadores incompletos. Backups da versão anterior são migrados por identidade da tarefa.
+Propostas não assinadas são pipeline. Compras de produtos exigem confirmação. Contratos assinados podem estar pendentes de pagamento. MRR vem exclusivamente de assinaturas ativas, não de setups. Recebimentos, reembolsos e despesas são registros separados. Os resultados de lucro são parciais e estimados com os custos informados, sem impostos, câmbio ou remuneração própria.
+
+O funil permite medições e estimativas distintas. A conversão usa compras confirmadas nas mesmas datas das visitas medidas; períodos sobrepostos bloqueiam a taxa. Publicar conteúdo ou marcar uma campanha como publicada não cria receita.
+
+## Limites operacionais
+
+Planejamento e registros manuais: não envia emails, não publica posts, não processa pagamentos e não integra analytics externos automaticamente. Leads de produto ficam separados do CRM de serviços. O dashboard não modifica o template Notion privado.
+
+## Executar e verificar
+
+Abra `index.html` no navegador ou sirva a pasta por HTTP. Não existe build obrigatório.
+
+```sh
+node tests/verify.cjs
+```
+
+O teste lê os scripts do HTML publicado e verifica sintaxe, inicialização, migrações v1/v2, preservação de estado, conflitos, dependências, datas, cálculos, 28 subviews, preços e histórico de copy com dados sintéticos isolados. Não substitui QA visual ou aceitação comercial.
+
+GitHub Pages publica `main`, pasta raiz, com `.nojekyll`. O arquivo continua autocontido e funciona offline.
