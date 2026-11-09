@@ -10,7 +10,7 @@ const assert = require('node:assert/strict');
 const { randomUUID } = require('node:crypto');
 
 const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
-const scriptNames = ['bos-core', 'bos-products', 'bos-business', 'bos-operations', 'bos-legacy', 'bos-boot'];
+const scriptNames = ['bos-core', 'bos-pilot', 'bos-legacy', 'bos-boot'];
 const scripts = Object.fromEntries(scriptNames.map(name => {
   const match = html.match(new RegExp('<script id="' + name + '">([\\s\\S]*?)</script>'));
   assert(match, 'Missing shipped script: ' + name);
@@ -72,23 +72,17 @@ const sale = (id, patch = {}) => ({
   productId: '', channel: 'Direct', date: '2026-11-05', amount: 750,
   collected: 0, refunds: 0, status: 'signed', revenueType: 'setup', ...patch,
 });
-function financialEnvironment() {
-  const e = environment({}, false);
-  e.B.state = e.B.defaultState();
-  return e;
-}
-
-test('All shipped inline scripts parse; the document remains standalone pt-BR', () => {
-  assert.equal(Object.keys(scripts).length, 6);
-  assert(html.includes('<html lang="pt-BR">'));
+test('All shipped inline scripts parse; the document remains standalone', () => {
+  assert.equal(Object.keys(scripts).length, 4);
+  assert(html.includes('<html lang="en">'));
   assert(!/<script\b[^>]+src=/i.test(html), 'Unexpected external script dependency');
   assert(!/<link\b[^>]+rel=["']stylesheet/i.test(html), 'Unexpected external stylesheet');
   assert(!html.includes('\ufffd'), 'Invalid UTF-8 replacement character');
 });
-test('Fresh initialization has unique seeded tasks, products and no fabricated results', () => {
+test('Fresh initialization has unique seeded tasks and no fabricated results', () => {
   const { B } = environment();
   assert.equal(B.readOnly, false);
-  const seedTasks = [B.productSeeds, B.businessSeeds, B.cycleSeeds].flatMap(s => s?.tasks || []);
+  const seedTasks = B.pilotSeeds.tasks;
   const expected = new Set(seedTasks.map(t => t.id));
   assert.equal(expected.size, seedTasks.length, 'Duplicate task IDs in seeds');
   assert.equal(B.state.tasks.filter(t => t.cycle !== 'legacy').length, expected.size);
@@ -98,7 +92,7 @@ test('Fresh initialization has unique seeded tasks, products and no fabricated r
   assert.equal(B.state.tasks.filter(t => t.status === 'completed').length, 0);
   assert.equal(B.state.sales.length, 0);
   assert.equal(B.state.prospects.length, 0);
-  assert.equal(B.state.products.filter(p => p.id === 'product-a').length, 1);
+  assert.equal(B.state.products.length, 0);
 });
 for (const version of [1, 2]) {
   test('v' + version + ' migration preserves exact task identity, flags and all raw fields', () => {
@@ -197,94 +191,61 @@ test('Validation rejects duplicate IDs, unsupported backups, unsafe URLs and imp
   state.signals = []; state.sales = [sale('bad', { amount: '750' })];
   assert.throws(() => B.validate(state));
 });
-test('Unsigned proposals and drafts are pipeline only, never cash or contracted revenue', () => {
-  const { B } = financialEnvironment();
-  B.state.sales = [sale('draft', { status: 'draft', collected: 750 })];
-  B.state.prospects = [{ id: 'p', stage: 'proposal', proposalValue: 1250 }];
-  const f = B.finance();
-  assert.equal(f.collected, 0); assert.equal(f.contracted, 0); assert.equal(f.pipeline, 1250);
-});
-test('Signed unpaid and partial contracts separate pending cash, refunds and expenses', () => {
-  const { B } = financialEnvironment();
-  B.state.sales = [sale('unpaid'), sale('partial', { amount: 1250, collected: 300, refunds: 30 })];
-  B.state.expenses = [{ id: 'expense', workstream: 'services', date: '2026-11-05', amount: 40, category: 'delivery' }];
-  const f = B.finance();
-  assert.equal(f.contracted, 2000); assert.equal(f.collected, 300); assert.equal(f.pending, 1700);
-  assert.equal(f.refunds, 30); assert.equal(f.netSales, 270); assert.equal(f.profitEstimate, 230);
-  assert.equal(f.coverageComplete, false);
-});
-test('Only confirmed digital purchases count, and cancelled transactions are excluded', () => {
-  const { B } = financialEnvironment();
-  B.state.sales = [
-    sale('unconfirmed', { workstream: 'digital', amount: 19, collected: 19 }),
-    sale('confirmed', { workstream: 'digital', productId: 'product-a', status: 'confirmed', amount: 19, collected: 19 }),
-    sale('cancelled', { status: 'cancelled', collected: 750 }),
-  ];
-  const f = B.finance();
-  assert.equal(f.collected, 19); assert.equal(f.purchases, 1); assert.equal(f.averageOrderValue, 19);
-});
-test('Setup fees never become MRR; only current active subscriptions contribute', () => {
-  const { B } = financialEnvironment();
-  B.state.sales = [sale('setup', { status: 'confirmed', collected: 750 })];
-  B.state.subscriptions = [
-    { id: 'active', workstream: 'services', status: 'active', monthlyAmount: 79, startDate: '2026-11-05' },
-    { id: 'paused', status: 'paused', monthlyAmount: 297 },
-    { id: 'cancelled', status: 'cancelled', monthlyAmount: 397 },
-    { id: 'future', status: 'active', monthlyAmount: 99, startDate: '2026-11-06' },
-  ];
-  assert.equal(B.finance().mrr, 79); assert.equal(B.finance().serviceSetupRevenue, 750);
-});
-test('Cycle boundaries include Nov 5 and Dec 5, exclude adjacent dates, and render 31 dates', () => {
-  const { B } = financialEnvironment();
-  B.state.sales = [
-    sale('before', { date: '2026-11-04', collected: 750 }),
-    sale('first', { date: '2026-11-05', collected: 750 }),
-    sale('last', { date: '2026-12-05', collected: 750 }),
-    sale('after', { date: '2026-12-06', collected: 750 }),
-  ];
-  assert.equal(B.finance().collected, 1500); assert.equal(B.finance({ cycle: false }).collected, 3000);
-  const plan = B.modules.operations.render('plan');
-  const dates = [...new Set([...plan.matchAll(/data-plan-date="([\d-]+)"/g)].map(m => m[1]))].sort();
-  assert.equal(dates.length, 31); assert.equal(dates[0], '2026-11-05'); assert.equal(dates.at(-1), '2026-12-05');
-});
-test('Invalid monetary tuples are excluded and product/channel filters are safe', () => {
-  const { B } = financialEnvironment();
-  B.state.sales = [
-    sale('negative', { collected: -1 }), sale('overpaid', { collected: 751 }),
-    sale('bad-refund', { collected: 5, refunds: 6 }),
-    sale('special', { collected: 100, channel: '__proto__' }),
-    sale('product', { workstream: 'digital', productId: 'product-a', status: 'confirmed', amount: 19, collected: 19, channel: 'LinkedIn' }),
-  ];
-  const f = B.finance();
-  assert.equal(f.collected, 119); assert.equal(f.invalidRecords.length, 3);
-  assert.equal(f.byChannel.__proto__.collected, 100);
-  assert.equal(B.finance({ productId: 'product-a' }).collected, 19);
-  assert.equal(vm.runInContext('Object.prototype.collected', environment({}, false).context), undefined);
-});
-test('Every module subview renders without creating business records', () => {
-  const { B, node } = environment(), before = JSON.stringify(B.state);
-  let count = 0;
-  for (const [key, module] of Object.entries(B.modules)) {
-    for (const [sub] of module.tabs || [['', '']]) {
-      B.open(key, sub); count++;
-      assert.equal(typeof node('#bos-content').innerHTML, 'string');
-      assert(!node('#bos-content').innerHTML.includes('[object Object]'), key + '/' + sub);
-    }
+test('Only pilot views are navigable and rendering leaves all records intact', () => {
+  const { B, node } = environment();
+  const before = JSON.stringify(B.state);
+  assert.deepEqual(Object.keys(B.modules), ['pilot']);
+  const headings = ['Start with five businesses', 'Sales and delivery checklist', 'Price the job', '30-day research and sales plan', 'Checklist backup'];
+  for (const [index, [view]] of B.modules.pilot.tabs.entries()) {
+    B.open('pilot', view);
+    assert(node('#bos-content').innerHTML.includes(headings[index]));
+    assert(!node('#bos-content').innerHTML.includes('[object Object]'));
   }
-  assert(count >= 28); assert.equal(JSON.stringify(B.state), before);
+  B.open('digital', 'portfolio');
+  B.open('ads', 'dashboard');
+  assert.equal(B.current, 'pilot');
+  assert.equal(B.sub, 'backup');
+  assert(!node('#bos-nav').innerHTML.includes('Digital Products'));
+  assert.equal(JSON.stringify(B.state), before);
 });
-test('Shared product completion survives reload without duplicate seeds or automatic price changes', () => {
+
+test('Existing records remain intact and pilot completion survives reload', () => {
+  const original = environment({}, false).B.defaultState();
+  original.products = [{ id: 'old-product', name: 'Keep', price: 19 }];
+  original.ads = [{ id: 'old-ad', name: 'Keep this too' }];
+  original.sales = [sale('existing-sale', { collected: 450 })];
+  original.tasks = [task('past-task', { status: 'completed' })];
+  const e = environment({ 'side-hustles-business-os-v3': JSON.stringify(original) });
+  assert.deepEqual(clone(e.B.state.products), clone(original.products));
+  assert.deepEqual(clone(e.B.state.ads), clone(original.ads));
+  assert.deepEqual(clone(e.B.state.sales), clone(original.sales));
+  const active = e.B.state.tasks.filter(e.B.isPilot);
+  assert.equal(active.length, 16);
+  assert.equal(e.B.progress(active).done, 0);
+  e.B.updateTask(active[0].id, { status: 'completed' });
+  const reload = environment({ 'side-hustles-business-os-v3': e.storage.get(e.B.KEY) });
+  assert.equal(reload.B.state.tasks.length, e.B.state.tasks.length);
+  assert.equal(reload.B.progress(reload.B.state.tasks.filter(reload.B.isPilot)).done, 1);
+  assert(reload.B.state.tasks.some(item => item.id === 'past-task' && item.status === 'completed'));
+});
+
+test('Quote math and 30-day research quotas match the plan', () => {
   const { B } = environment();
-  const seed = B.state.tasks.find(t => t.productId === 'product-a' && !t.dependencies.length && t.cycle !== 'legacy');
-  B.updateTask(seed.id, { status: 'completed' });
-  assert.equal(B.progress(B.state.tasks.filter(t => t.productId === 'product-a')).done, 1);
-  const count = B.state.tasks.length, product = B.state.products.find(p => p.id === 'product-a');
-  assert.equal(product.betaPrice, 19); assert.equal(product.plannedPrice, 29);
-  product.stage = 'ready'; B.save(); B.init();
-  assert.equal(B.state.tasks.length, count);
-  assert.equal(B.state.tasks.find(t => t.id === seed.id).status, 'completed');
-  assert.equal(B.state.products.find(p => p.id === 'product-a').price, 19);
+  const q = B.estimateQuote({ hours:20, rate:35, cost:70, allowance:10, quote:900, deposit:50, fx:5, fees:3, direct:150, reserve:450 });
+  assert.equal(q.floor.toFixed(2), '855.56');
+  assert.equal(q.deposit, 450);
+  assert.equal(q.balance, 450);
+  assert.equal(q.gross, 4500);
+  assert.equal(q.net, 3765);
+  assert.equal(q.effective, 188.25);
+  assert.equal(B.pilotDays.length, 30);
+  assert.equal(B.pilotDays.reduce((total, day) => total + day[2], 0), 90);
+  const markdown = fs.readFileSync(path.resolve(__dirname, '../30-DAY-PLAN.md'), 'utf8');
+  for (const [i, [market, action, contacts]] of B.pilotDays.entries()) {
+    assert(markdown.includes(`| ${i + 1} | ${market} | ${action} | ${contacts} |`));
+  }
 });
+
 test('Copy edits preserve readable previous versions and summaries escape user markup', () => {
   const { B } = environment();
   const copy = B.persistRecord('copies', null, { name: 'SYNTHETIC COPY', productId: 'product-a', body: 'A' }, []);
